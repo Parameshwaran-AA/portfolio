@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Data Scientist • ML Engineer • Analyst</p>
+
+            <nav>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="resume.pdf" class="btn" target="_blank">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-box">
+            <div data-aos="fade-right">
+                <h2>Building Data Products with Impact</h2>
+                <p>
+                    I specialize in predictive modeling, NLP, and scalable data
+                    solutions. I enjoy turning messy data into meaningful business insights.
+                </p>
+                <a href="#projects" class="btn primary">View Projects</a>
+            </div>
+
+            <img src="assets/profile.jpg" 
+                 alt="Profile" 
+                 class="profile-img" 
+                 data-aos="fade-left">
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Projects</h2>
+
+            <div class="grid">
+
+                <div class="card" data-aos="zoom-in">
+                    <h3>Customer Churn Model</h3>
+                    <p>Feature engineering + SHAP + Flask API deployment.</p>
+                    <div class="tags">Python • ML • Flask • SHAP</div>
+                    <a href="#" class="link">GitHub →</a>
+                </div>
+
+                <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>Semantic Search Engine</h3>
+                    <p>Document search using FAISS + Transformers.</p>
+                    <div class="tags">NLP • FAISS • Transformers</div>
+                    <a href="#" class="link">GitHub →</a>
+                </div>
+
+                <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Interactive KPI Dashboard</h3>
+                    <p>Streamlit dashboard with ETL automation.</p>
+                    <div class="tags">Streamlit • ETL • SQL</div>
+                    <a href="#" class="link">GitHub →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <span>Python</span><span>SQL</span><span>Machine Learning</span>
+                <span>Deep Learning</span><span>TensorFlow</span>
+                <span>PyTorch</span><span>Data Analysis</span><span>Power BI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>
+                I specialize in end-to-end machine learning solutions and collaborative 
+                problem solving. I enjoy working with teams to convert business problems 
+                into data-driven decisions.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+            <p>GitHub: <a href="#" target="_blank">github.com/yourname</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourname</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Your Name</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

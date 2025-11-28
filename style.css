@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f6f9fc;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.header nav a {
+    margin: 0 10px;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header .btn {
+    padding: 6px 12px;
+    background: #333;
+    color: white;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    padding: 70px 0;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.profile-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTONS */
+.btn.primary {
+    background: #0070f3;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn.primary:hover {
+    background: #005ad1;
+}
+
+/* SECTIONS */
+.section {
+    padding: 45px 0;
+}
+
+/* PROJECT CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.link {
+    color: #0070f3;
+    font-weight: bold;
+}
+
+/* SKILLS */
+.skills-grid span {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
