@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parameshwaran Anandhakumar | ML & Software Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Parameshwaran Anandhakumar | Portfolio</title>
+    <!-- Modern Professional Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #0070f3;
@@ -20,7 +21,7 @@
         .container { width: 90%; max-width: 1100px; margin: auto; }
 
         /* HEADER */
-        header { background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+        header { background: rgba(255,255,255,0.8); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
         .logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; letter-spacing: 1px;}
         nav a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
@@ -31,35 +32,37 @@
         .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; }
         .hero-tag { color: var(--primary); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
         .hero h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800;}
-        .hero p { font-size: 1.2rem; color: var(--slate); margin-bottom: 30px; }
-        .profile-img { width: 100%; max-width: 350px; border-radius: 40px; box-shadow: var(--shadow); border: 10px solid white; }
+        .hero p { font-size: 1.15rem; color: var(--slate); margin-bottom: 30px; }
+        .profile-img { width: 100%; max-width: 350px; border-radius: 40px; box-shadow: var(--shadow); border: 10px solid white; object-fit: cover;}
 
         .btn { padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; border: none; cursor: pointer;}
         .btn-primary { background: var(--primary); color: white; margin-right: 15px; }
         .btn-secondary { border: 2px solid #e2e8f0; color: var(--dark); }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
-        /* IMPACT BAR */
-        .impact-bar { background: var(--dark); color: white; padding: 40px 0; border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; margin-bottom: 80px; }
+        /* IMPACT STATS BAR */
+        .impact-bar { background: var(--dark); color: white; padding: 40px 0; border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; margin-bottom: 80px; box-shadow: var(--shadow); }
         .stat h2 { color: var(--primary); font-size: 2.5rem; font-weight: 800;}
-        .stat p { font-size: 0.8rem; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; }
+        .stat p { font-size: 0.8rem; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; margin-top: 5px;}
 
         /* SECTION TITLES */
         .section-header { margin: 80px 0 40px; }
         .section-header h2 { font-size: 2.2rem; font-weight: 800; display: flex; align-items: center; gap: 15px; }
         .section-header h2::after { content: ""; height: 2px; flex-grow: 1; background: #e2e8f0; }
 
-        /* TIMELINE CARDS (Exp & Education) */
+        /* WORK EXPERIENCE */
         .timeline-card { background: var(--card); border-radius: 20px; padding: 35px; border: 1px solid #e2e8f0; margin-bottom: 30px; transition: 0.3s; }
         .timeline-card:hover { border-color: var(--primary); box-shadow: var(--shadow); }
-        .card-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+        .card-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
         .card-meta h3 { font-size: 1.4rem; color: var(--dark); }
         .card-meta .date { font-weight: 700; color: var(--primary); font-size: 0.9rem; }
         .card-meta .company { font-weight: 600; color: var(--slate); display: block; }
-        .timeline-card li { margin-bottom: 12px; position: relative; padding-left: 20px; color: var(--slate); list-style: none; font-size: 0.95rem; }
-        .timeline-card li::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+        .timeline-card ul { list-style: none; }
+        .timeline-card li { margin-bottom: 14px; position: relative; padding-left: 24px; color: var(--slate); font-size: 0.95rem; line-height: 1.5;}
+        .timeline-card li::before { content: "▹"; position: absolute; left: 0; color: var(--primary); font-weight: bold; font-size: 1.2rem;}
+        .timeline-card b { color: var(--dark); font-weight: 700; }
 
-        /* PROJECTS GRID */
+        /* PROJECTS */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
         .project-card { background: white; border-radius: 20px; padding: 30px; border: 1px solid #f1f5f9; display: flex; flex-direction: column; transition: 0.4s; }
         .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); border-color: var(--primary); }
@@ -67,16 +70,18 @@
         .project-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
         .project-card p { font-size: 0.9rem; color: var(--slate); margin-bottom: 20px; flex-grow: 1; }
         .card-tech { display: flex; flex-wrap: wrap; gap: 8px; }
-        .card-tech span { font-size: 0.75rem; background: #f1f5f9; padding: 5px 10px; border-radius: 6px; font-weight: 600; }
+        .card-tech span { font-size: 0.7rem; background: #f1f5f9; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: var(--slate); }
 
-        /* SKILLS */
+        /* SKILLS GRID */
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
-        .skill-cat h4 { margin-bottom: 15px; font-size: 1rem; color: var(--dark); font-weight: 800;}
+        .skill-cat h4 { margin-bottom: 18px; font-size: 1rem; color: var(--dark); font-weight: 800; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 4px;}
         .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tags span { background: white; border: 1px solid #e2e8f0; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 500; transition: 0.3s;}
-        .skill-tags span:hover { border-color: var(--primary); color: var(--primary); }
+        .skill-tags span { background: white; border: 1px solid #e2e8f0; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 500; transition: 0.2s;}
+        .skill-tags span:hover { border-color: var(--primary); color: var(--primary); background: #f0f7ff; }
 
-        /* RESPONSIVE */
+        /* FOOTER */
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid #e2e8f0; color: var(--slate); font-size: 0.9rem; margin-top: 60px;}
+
         @media (max-width: 768px) {
             .hero-grid { grid-template-columns: 1fr; text-align: center; }
             .hero-image { order: -1; }
@@ -90,61 +95,61 @@
 
 <header>
     <div class="container nav-container">
-        <div class="logo">Paramesh</div>
+        <div class="logo">PARAMESHWARAN</div>
         <nav>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
-            <a href="resume.pdf" target="_blank" class="btn-primary" style="padding: 5px 15px; border-radius: 5px;">Resume</a>
+            <a href="resume.pdf" target="_blank" class="btn-primary" style="padding: 6px 16px; border-radius: 6px;">Resume</a>
         </nav>
     </div>
 </header>
 
+<!-- HERO SECTION -->
 <section class="hero">
     <div class="container hero-grid">
         <div class="hero-text">
-            <div class="hero-tag">Bridge Builder: ML & Software Engineer</div>
-            <h1>Building Intelligent Data-Driven Systems</h1>
+            <div class="hero-tag">Bridge Builder: Full-Stack & ML/AI</div>
+            <h1>Bridging Engineering and Intelligent Insights</h1>
             <p>
-                I am a Data Science graduate student specializing in the intersection of <b>Machine Learning</b> and <b>Full-Stack Engineering</b>. 
-                I design scalable AI systems that transform complex data into impactful, production-ready insights.
+                I am a Data Science graduate student specializing in architecting <b>Intelligent Systems</b>. I bridge the gap between robust <b>Full-Stack Engineering</b> and high-impact <b>Machine Learning</b> to transform complex business problems into scalable, production-ready solutions.
             </p>
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="#projects" class="btn btn-primary">Explore My Work</a>
                 <a href="mailto:parameshwarananandhakumar@gmail.com" class="btn btn-secondary">Get In Touch</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="assets/profile.jpg" alt="Parameshwaran" class="profile-img">
+            <img src="assets/profile.jpg" alt="Parameshwaran Anandhakumar" class="profile-img">
         </div>
     </div>
 </section>
 
+<!-- IMPACT STATS -->
 <section class="container">
     <div class="impact-bar">
         <div class="stat">
             <h2>+25%</h2>
-            <p>Revenue Increase Driven</p>
+            <p>Parts Revenue Growth</p>
         </div>
         <div class="stat">
-            <h2>< 1s</h2>
-            <p>Inference Latency Achieved</p>
+            <h2>50%</h2>
+            <p>Order Backlog Reduction</p>
         </div>
         <div class="stat">
-            <h2>84%</h2>
-            <p>Code Unit Test Coverage</p>
+            <h2>~92%</h2>
+            <p>Model Validation Accuracy</p>
         </div>
     </div>
 </section>
 
-<!-- WORK EXPERIENCE -->
+<!-- EXPERIENCE -->
 <section id="experience" class="container">
     <div class="section-header">
-        <h2>💼 Professional Journey</h2>
+        <h2>💼 Professional Experience</h2>
     </div>
 
-    <!-- FORD -->
     <div class="timeline-card">
         <div class="card-meta">
             <div>
@@ -154,15 +159,17 @@
             <span class="date">Jul 2022 – Jul 2025</span>
         </div>
         <ul>
-            <li>Built and deployed <b>Python-based forecasting models</b> for Service Parts Planning, contributing to a <b>25% in parts revenue</b>.</li>
-            <li>Analyzed 10,000+ sales orders using <b>SQL and Python</b>; automated scripts to <b>reduce order backlog by 50%</b>.</li>
-            <li>Developed high-throughput <b>RESTful APIs</b> using <b>Node.js and MongoDB</b> for reliable web service data access.</li>
-            <li>Integrated <b>Stripe APIs</b> to enhance payment workflows and security in production.</li>
-            <li>Enhanced <b>CI/CD pipelines</b> using <b>GitHub Actions</b> for deployments to Vercel and Heroku.</li>
+            <li>Led cross-functional requirement discovery workshops with process owners and business stakeholders, translating complex business problems into data-driven use cases and analytical requirements aligned with organizational strategy.</li>
+            <li><b>Designed, developed, and deployed Python-based forecasting models for Service Parts Demand Planning</b>, leveraging <b>time-series analysis (ARIMA/ETL)</b> and regression-based approaches, resulting in significant forecast accuracy improvements and <b>driving a 25% increase in parts revenue</b> across three regions.</li>
+            <li>Built scalable data processing and analytics pipelines to ingest, clean, and analyze <b>10,000+ sales order records</b> using <b>SQL, Python, and Excel</b>, implementing automated data-quality checks and preprocessing scripts that <b>reduced order backlog by 50%</b> and improved operational efficiency.</li>
+            <li>Developed <b>RESTful APIs</b> using <b>Node.js and MongoDB</b>, ensuring consistent, high-throughput communication and reliable data access for web services.</li>
+            <li>Integrated <b>Stripe APIs</b> to enhance payment workflows, enhancing transactional reliability, user satisfaction, and security in production.</li>
+            <li>Implemented <b>Redux Toolkit</b> and Context API to streamline state management, ensure modular design, and optimize rendering in complex applications.</li>
+            <li>Delivered production-ready features by converting user requirements into design specs; with agile sprints aligned with engineering objectives.</li>
+            <li>Deployed reproducible <b>LLM CI/CD through Docker, Kubernetes, and GitHub Actions</b>, ensuring rollback support and zero-downtime model releases and orchestrated modular data pipelines in <b>Apache Airflow</b> to clean, structure, and track datasets (JSONL, CSV, code), streamlining model training input.</li>
         </ul>
     </div>
 
-    <!-- UNDERGRAD WORK -->
     <div class="timeline-card">
         <div class="card-meta">
             <div>
@@ -172,61 +179,55 @@
             <span class="date">Jul 2019 – Jul 2020</span>
         </div>
         <ul>
-            <li>Built an end-to-end <b>CNN-based brain tumor classification system</b> achieving <b>~92% validation accuracy</b>.</li>
-            <li>Optimized architectures (AlexNet, LeNet) improving performance by <b>20% over baseline models</b>.</li>
-            <li>Deployed as a <b>Django application</b>, enabling <b>real-time MRI inference (<1s latency)</b>.</li>
-            <li>Implemented augmentation pipelines that <b>reduced validation loss by ~25%</b>.</li>
+            <li>Built an end-to-end <b>CNN-based brain tumor classification system</b> using MRI images, achieving <b>~92% validation accuracy</b>.</li>
+            <li>Optimized architectures (AlexNet, LeNet) resulting in a <b>20% performance increase</b> over baseline models.</li>
+            <li>Deployed as a <b>Django-based application</b>, enabling <b>real-time MRI inference (<1s latency)</b>.</li>
         </ul>
     </div>
 </section>
 
-<!-- PROJECTS SECTION -->
+<!-- PROJECTS -->
 <section id="projects" class="container">
     <div class="section-header">
         <h2>📂 Featured Projects</h2>
     </div>
     <div class="grid">
-        
         <div class="project-card">
             <span class="project-tag">Machine Learning</span>
             <h3>Mental Health Prediction</h3>
-            <p>Stacked ensemble model combining CatBoost, Random Forest, and Neural Networks. Full ML Pipeline with data cleaning, feature encoding, and cross-validation.</p>
+            <p>Built a stacked ensemble model (CatBoost, Random Forest, Neural Network) with a Logistic Regression meta-model. AUC/F1-Score optimized.</p>
             <div class="card-tech">
-                <span>CatBoost</span><span>Python</span><span>MLOps</span>
+                <span>Python</span><span>CatBoost</span><span>Scikit-Learn</span>
             </div>
         </div>
-
         <div class="project-card">
-            <span class="project-tag">Backend</span>
+            <span class="project-tag">Backend Architecture</span>
             <h3>Event Booking & Ticketing</h3>
-            <p>Scalable Spring Boot backend with Redis caching (40% load reduction) and JWT security. Implemented optimistic locking to prevent double-bookings.</p>
+            <p>Spring Boot backend with Redis caching and JWT security. Reduced DB load by 40% and prevented double-booking via optimistic locking.</p>
             <div class="card-tech">
-                <span>Spring Boot</span><span>Redis</span><span>Java</span>
+                <span>Java</span><span>Spring Boot</span><span>Redis</span><span>MySQL</span>
             </div>
         </div>
-
         <div class="project-card">
             <span class="project-tag">Microservices</span>
-            <h3>E-Commerce Order Processor</h3>
-            <p>Microservices architecture for payments and inventory. Optimized DB queries and achieved 84% test coverage via JUnit/Mockito.</p>
+            <h3>E-Commerce Order System</h3>
+            <p>Clean architecture backend managing orders/payments. Achieved 84% test coverage via JUnit/Mockito with optimized query scaling.</p>
             <div class="card-tech">
-                <span>Spring Boot</span><span>MySQL</span><span>JUnit</span>
+                <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JUnit</span>
             </div>
         </div>
-
         <div class="project-card">
-            <span class="project-tag">Full Stack</span>
+            <span class="project-tag">Full Stack + Search</span>
             <h3>Fable: Social Storytelling</h3>
-            <p>Social storytelling platform with Node.js backend. Features ElasticSearch for querying and real-time updates via GraphQL and Firebase.</p>
+            <p>Storytelling platform with Node.js, MongoDB, and Redis. Integrated ElasticSearch for scalable querying and GraphQL for real-time APIs.</p>
             <div class="card-tech">
-                <span>Node.js</span><span>GraphQL</span><span>Docker</span>
+                <span>Node.js</span><span>GraphQL</span><span>ElasticSearch</span><span>Docker</span>
             </div>
         </div>
-
     </div>
 </section>
 
-<!-- ACADEMICS -->
+<!-- EDUCATION -->
 <section id="education" class="container">
     <div class="section-header">
         <h2>🎓 Academic Background</h2>
@@ -235,13 +236,12 @@
         <div class="card-meta">
             <div>
                 <h3>M.S. in Data Science</h3>
-                <span class="company">University At Buffalo, SUNY</span>
+                <span class="company">University at Buffalo, SUNY</span>
             </div>
             <span class="date">2025 – 2026</span>
         </div>
-        <p><b>Coursework:</b> Machine Learning, Statistics and Probability, Data Models Query Language, Python for Data Scientists.</p>
+        <p><b>Relevant Coursework:</b> Machine Learning, Statistics & Probability, Data Models Query Language, Python for Data Scientists.</p>
     </div>
-
     <div class="timeline-card">
         <div class="card-meta">
             <div>
@@ -250,7 +250,7 @@
             </div>
             <span class="date">2018 – 2022</span>
         </div>
-        <p><b>Focus:</b> Core CS Fundamentals, Data Structures and Algorithms, Software Engineering Fundamentals.</p>
+        <p><b>Focus:</b> Core CS Fundamentals, Data Structures and Algorithms, Object-Oriented Programming, Software Fundamentals.</p>
     </div>
 </section>
 
@@ -261,34 +261,41 @@
     </div>
     <div class="skills-grid">
         <div class="skill-cat">
-            <h4>Languages</h4>
+            <h4>Programming Languages</h4>
             <div class="skill-tags">
-                <span>Python</span><span>Java</span><span>TypeScript</span><span>SQL</span><span>C</span><span>HTML</span>
+                <span>Python</span><span>SQL</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>C</span><span>Shell Scripting</span><span>HTML</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>Frameworks</h4>
+            <h4>Machine Learning & Data Science</h4>
             <div class="skill-tags">
-                <span>React.js</span><span>Next.js</span><span>Spring Boot</span><span>Django</span><span>Express.js</span><span>SageMaker</span>
+                <span>Supervised/Unsupervised Learning</span><span>Deep Learning</span><span>Neural Networks</span><span>Ensemble Methods</span><span>Random Forest</span><span>XGBoost</span><span>CatBoost</span><span>Logistic Regression</span><span>Decision Trees</span><span>SVM</span><span>K-Means</span><span>ARIMA</span><span>Gradient Boosting</span><span>Feature Engineering</span><span>Hyperparameter Tuning</span><span>A/B Testing</span><span>Scikit-learn</span><span>TensorFlow</span><span>PyTorch</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>Cloud & DevOps</h4>
+            <h4>Core Computer Science</h4>
             <div class="skill-tags">
-                <span>AWS Lambda</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Apache Airflow</span>
+                <span>Data Structures & Algorithms</span><span>OOP</span><span>System Design Basics</span><span>Software Engineering Principles</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>Testing & Tools</h4>
+            <h4>Frameworks & Cloud</h4>
             <div class="skill-tags">
-                <span>JUnit</span><span>Mockito</span><span>Jest</span><span>Postman</span><span>Stripe API</span>
+                <span>React.js</span><span>Redux</span><span>Spring Boot</span><span>Express.js</span><span>Node.js</span><span>Django</span><span>GraphQL</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Apache Airflow</span><span>AWS Lambda</span><span>SageMaker</span>
+            </div>
+        </div>
+        <div class="skill-cat">
+            <h4>Databases & Tools</h4>
+            <div class="skill-tags">
+                <span>MongoDB</span><span>Firebase</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>ElasticSearch</span><span>Git</span><span>Postman</span><span>Stripe/PayPal API</span>
             </div>
         </div>
     </div>
 </section>
 
-<footer style="text-align: center; padding: 60px 0; border-top: 1px solid #e2e8f0; color: var(--slate); font-size: 0.9rem;">
-    <p>© 2026 Parameshwaran Anandhakumar • parameshwarananandhakumar@gmail.com</p>
+<footer>
+    <p>© 2026 Parameshwaran Anandhakumar | Built with Passion for Data & AI</p>
+    <p style="margin-top: 10px; opacity: 0.6; font-size: 0.8rem;">parameshwarananandhakumar@gmail.com • linkedin.com/in/parameshwaran-anandhakumar</p>
 </footer>
 
 </body>
