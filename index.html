@@ -22,7 +22,7 @@
         /* HEADER */
         header { background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
         .nav-container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; }
+        .logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; letter-spacing: 1px;}
         nav a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
         nav a:hover { color: var(--primary); }
 
@@ -30,49 +30,57 @@
         .hero { padding: 100px 0 60px; }
         .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; align-items: center; }
         .hero-tag { color: var(--primary); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
-        .hero h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 20px; }
+        .hero h1 { font-size: 3.2rem; line-height: 1.1; margin-bottom: 20px; font-weight: 800;}
         .hero p { font-size: 1.2rem; color: var(--slate); margin-bottom: 30px; }
         .profile-img { width: 100%; max-width: 350px; border-radius: 40px; box-shadow: var(--shadow); border: 10px solid white; }
 
-        .btn { padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
+        .btn { padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; border: none; cursor: pointer;}
         .btn-primary { background: var(--primary); color: white; margin-right: 15px; }
         .btn-secondary { border: 2px solid #e2e8f0; color: var(--dark); }
         .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
         /* IMPACT BAR */
         .impact-bar { background: var(--dark); color: white; padding: 40px 0; border-radius: 24px; display: grid; grid-template-columns: repeat(3, 1fr); text-align: center; margin-bottom: 80px; }
-        .stat h2 { color: var(--primary); font-size: 2.5rem; }
+        .stat h2 { color: var(--primary); font-size: 2.5rem; font-weight: 800;}
         .stat p { font-size: 0.8rem; text-transform: uppercase; opacity: 0.7; letter-spacing: 1px; }
 
         /* SECTION TITLES */
-        .section-header { margin-bottom: 40px; }
-        .section-header h2 { font-size: 2rem; font-weight: 800; display: flex; align-items: center; gap: 15px; }
+        .section-header { margin: 80px 0 40px; }
+        .section-header h2 { font-size: 2.2rem; font-weight: 800; display: flex; align-items: center; gap: 15px; }
         .section-header h2::after { content: ""; height: 2px; flex-grow: 1; background: #e2e8f0; }
 
-        /* EXPERIENCE & EDUCATION CARDS */
+        /* TIMELINE CARDS (Exp & Education) */
         .timeline-card { background: var(--card); border-radius: 20px; padding: 35px; border: 1px solid #e2e8f0; margin-bottom: 30px; transition: 0.3s; }
         .timeline-card:hover { border-color: var(--primary); box-shadow: var(--shadow); }
         .card-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
         .card-meta h3 { font-size: 1.4rem; color: var(--dark); }
         .card-meta .date { font-weight: 700; color: var(--primary); font-size: 0.9rem; }
         .card-meta .company { font-weight: 600; color: var(--slate); display: block; }
-        
-        .timeline-card ul { list-style: none; }
-        .timeline-card li { margin-bottom: 12px; position: relative; padding-left: 20px; color: var(--slate); font-size: 0.95rem; }
+        .timeline-card li { margin-bottom: 12px; position: relative; padding-left: 20px; color: var(--slate); list-style: none; font-size: 0.95rem; }
         .timeline-card li::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
-        .timeline-card b { color: var(--dark); }
 
-        /* SKILLS PILLS */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px; }
-        .skill-cat h4 { margin-bottom: 15px; font-size: 1rem; color: var(--dark); }
+        /* PROJECTS GRID */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .project-card { background: white; border-radius: 20px; padding: 30px; border: 1px solid #f1f5f9; display: flex; flex-direction: column; transition: 0.4s; }
+        .project-card:hover { transform: translateY(-10px); box-shadow: var(--shadow); border-color: var(--primary); }
+        .project-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 50px; margin-bottom: 15px; display: inline-block; background: #eff6ff; color: var(--primary); }
+        .project-card h3 { margin-bottom: 12px; font-size: 1.3rem; }
+        .project-card p { font-size: 0.9rem; color: var(--slate); margin-bottom: 20px; flex-grow: 1; }
+        .card-tech { display: flex; flex-wrap: wrap; gap: 8px; }
+        .card-tech span { font-size: 0.75rem; background: #f1f5f9; padding: 5px 10px; border-radius: 6px; font-weight: 600; }
+
+        /* SKILLS */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .skill-cat h4 { margin-bottom: 15px; font-size: 1rem; color: var(--dark); font-weight: 800;}
         .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
-        .skill-tags span { background: white; border: 1px solid #e2e8f0; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 500; }
+        .skill-tags span { background: white; border: 1px solid #e2e8f0; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 500; transition: 0.3s;}
+        .skill-tags span:hover { border-color: var(--primary); color: var(--primary); }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .hero-grid { grid-template-columns: 1fr; text-align: center; }
             .hero-image { order: -1; }
-            .hero h1 { font-size: 2.2rem; }
+            .hero h1 { font-size: 2.5rem; }
             .impact-bar { grid-template-columns: 1fr; gap: 30px; }
             .card-meta { flex-direction: column; }
         }
@@ -85,32 +93,30 @@
         <div class="logo">P.ANANDHAKUMAR</div>
         <nav>
             <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="resume.pdf" target="_blank" class="btn-primary" style="padding: 5px 15px; border-radius: 5px;">Resume</a>
         </nav>
     </div>
 </header>
 
 <section class="hero">
-    <div class="container">
-        <div class="hero-grid">
-            <div class="hero-text">
-                <div class="hero-tag">Bridge Builder: ML & Full-Stack</div>
-                <h1>Architecting Intelligent Systems</h1>
-                <p>
-                    I bridge the gap between complex <b>Machine Learning</b> models and scalable <b>Full-Stack</b> production environments. 
-                    From optimizing parts revenue at Ford to deploying real-time CNNs for medical imaging, I build software that thinks and scales.
-                </p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
-                    <a href="mailto:parameshwarananandhakumar@gmail.com" class="btn btn-secondary">Let's Talk</a>
-                </div>
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <div class="hero-tag">Bridge Builder: ML & Software Engineer</div>
+            <h1>Building Intelligent Data-Driven Systems</h1>
+            <p>
+                I am a Data Science graduate student specializing in the intersection of <b>Machine Learning</b> and <b>Full-Stack Engineering</b>. 
+                I design scalable AI systems that transform complex data into impactful, production-ready insights.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="mailto:parameshwarananandhakumar@gmail.com" class="btn btn-secondary">Get In Touch</a>
             </div>
-            <div class="hero-image">
-                <img src="assets/profile.jpg" alt="Parameshwaran" class="profile-img">
-            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Parameshwaran" class="profile-img">
         </div>
     </div>
 </section>
@@ -132,9 +138,10 @@
     </div>
 </section>
 
-<section id="experience" class="container" style="padding: 60px 0;">
+<!-- WORK EXPERIENCE -->
+<section id="experience" class="container">
     <div class="section-header">
-        <h2>💼 Professional Experience</h2>
+        <h2>💼 Professional Journey</h2>
     </div>
 
     <!-- FORD -->
@@ -147,15 +154,15 @@
             <span class="date">Jul 2022 – Jul 2025</span>
         </div>
         <ul>
-            <li>Built and deployed <b>Python-based forecasting models</b> using time-series and regression, improving accuracy and contributing to a <b>25% increase in parts revenue</b> across three regions.</li>
-            <li>Analyzed 10,000+ sales orders using <b>SQL and Python</b>; automated data-cleaning scripts and <b>reduced order backlog by 50%</b>.</li>
-            <li>Developed high-throughput <b>RESTful APIs</b> using <b>Node.js and MongoDB</b> for reliable data access in web services.</li>
-            <li>Integrated <b>Stripe APIs</b> to enhance transactional reliability and security in production payment workflows.</li>
-            <li>Enhanced <b>CI/CD pipelines</b> using <b>GitHub Actions</b>, accelerating multi-platform deployments to Vercel and Heroku.</li>
+            <li>Built and deployed <b>Python-based forecasting models</b> for Service Parts Planning, contributing to a <b>25% in parts revenue</b>.</li>
+            <li>Analyzed 10,000+ sales orders using <b>SQL and Python</b>; automated scripts to <b>reduce order backlog by 50%</b>.</li>
+            <li>Developed high-throughput <b>RESTful APIs</b> using <b>Node.js and MongoDB</b> for reliable web service data access.</li>
+            <li>Integrated <b>Stripe APIs</b> to enhance payment workflows and security in production.</li>
+            <li>Enhanced <b>CI/CD pipelines</b> using <b>GitHub Actions</b> for deployments to Vercel and Heroku.</li>
         </ul>
     </div>
 
-    <!-- UNDERGRAD EXPERIENCE -->
+    <!-- UNDERGRAD WORK -->
     <div class="timeline-card">
         <div class="card-meta">
             <div>
@@ -165,19 +172,65 @@
             <span class="date">Jul 2019 – Jul 2020</span>
         </div>
         <ul>
-            <li>Built an end-to-end <b>CNN-based brain tumor classification system</b> achieving <b>~92% validation accuracy</b> using MRI images.</li>
-            <li>Optimized classification performance by <b>~20% over baseline models</b> through Custom CNN, AlexNet, and hyperparameter tuning.</li>
-            <li>Deployed the model as a <b>Django application</b>, enabling <b>real-time MRI inference (<1s latency)</b> via a user-friendly interface.</li>
-            <li>Implemented data augmentation pipelines that <b>reduced validation loss by ~25%</b> and improved model generalization.</li>
+            <li>Built an end-to-end <b>CNN-based brain tumor classification system</b> achieving <b>~92% validation accuracy</b>.</li>
+            <li>Optimized architectures (AlexNet, LeNet) improving performance by <b>20% over baseline models</b>.</li>
+            <li>Deployed as a <b>Django application</b>, enabling <b>real-time MRI inference (<1s latency)</b>.</li>
+            <li>Implemented augmentation pipelines that <b>reduced validation loss by ~25%</b>.</li>
         </ul>
     </div>
 </section>
 
-<section id="education" class="container" style="padding: 60px 0;">
+<!-- PROJECTS SECTION -->
+<section id="projects" class="container">
     <div class="section-header">
-        <h2>🎓 Education</h2>
+        <h2>📂 Featured Projects</h2>
     </div>
+    <div class="grid">
+        
+        <div class="project-card">
+            <span class="project-tag">Machine Learning</span>
+            <h3>Mental Health Prediction</h3>
+            <p>Stacked ensemble model combining CatBoost, Random Forest, and Neural Networks. Full ML Pipeline with data cleaning, feature encoding, and cross-validation.</p>
+            <div class="card-tech">
+                <span>CatBoost</span><span>Python</span><span>MLOps</span>
+            </div>
+        </div>
 
+        <div class="project-card">
+            <span class="project-tag">Backend</span>
+            <h3>Event Booking & Ticketing</h3>
+            <p>Scalable Spring Boot backend with Redis caching (40% load reduction) and JWT security. Implemented optimistic locking to prevent double-bookings.</p>
+            <div class="card-tech">
+                <span>Spring Boot</span><span>Redis</span><span>Java</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Microservices</span>
+            <h3>E-Commerce Order Processor</h3>
+            <p>Microservices architecture for payments and inventory. Optimized DB queries and achieved 84% test coverage via JUnit/Mockito.</p>
+            <div class="card-tech">
+                <span>Spring Boot</span><span>MySQL</span><span>JUnit</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="project-tag">Full Stack</span>
+            <h3>Fable: Social Storytelling</h3>
+            <p>Social storytelling platform with Node.js backend. Features ElasticSearch for querying and real-time updates via GraphQL and Firebase.</p>
+            <div class="card-tech">
+                <span>Node.js</span><span>GraphQL</span><span>Docker</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACADEMICS -->
+<section id="education" class="container">
+    <div class="section-header">
+        <h2>🎓 Academic Background</h2>
+    </div>
     <div class="timeline-card">
         <div class="card-meta">
             <div>
@@ -186,55 +239,56 @@
             </div>
             <span class="date">2025 – 2026</span>
         </div>
-        <p><b>Focus:</b> Advanced ML, Statistics & Probability, Data Models Query Languages, and Python for Data Scientists.</p>
+        <p><b>Coursework:</b> Machine Learning, Statistics and Probability, Data Models Query Language, Python for Data Scientists.</p>
     </div>
 
     <div class="timeline-card">
         <div class="card-meta">
             <div>
                 <h3>B.Tech in Information Technology</h3>
-                <span class="company">RMD Engineering College (Anna University)</span>
+                <span class="company">RMD Engineering College</span>
             </div>
             <span class="date">2018 – 2022</span>
         </div>
-        <p><b>Core:</b> Data Structures & Algorithms, IT & Software Fundamentals, Computer Systems Architecture.</p>
+        <p><b>Focus:</b> Core CS Fundamentals, Data Structures and Algorithms, Software Engineering Fundamentals.</p>
     </div>
 </section>
 
-<section id="skills" class="container" style="padding: 60px 0;">
+<!-- SKILLS -->
+<section id="skills" class="container">
     <div class="section-header">
-        <h2>💻 Technical Arsenal</h2>
+        <h2>🛠️ Technical Arsenal</h2>
     </div>
     <div class="skills-grid">
         <div class="skill-cat">
-            <h4>Programming</h4>
+            <h4>Languages</h4>
             <div class="skill-tags">
-                <span>Python</span><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>C</span>
+                <span>Python</span><span>Java</span><span>TypeScript</span><span>SQL</span><span>C</span><span>HTML</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>ML & AI</h4>
+            <h4>Frameworks</h4>
             <div class="skill-tags">
-                <span>SageMaker</span><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span><span>Scikit-learn</span>
+                <span>React.js</span><span>Next.js</span><span>Spring Boot</span><span>Django</span><span>Express.js</span><span>SageMaker</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>Backend & Cloud</h4>
+            <h4>Cloud & DevOps</h4>
             <div class="skill-tags">
-                <span>Node.js</span><span>Spring Boot</span><span>Django</span><span>AWS Lambda</span><span>Docker</span><span>Kubernetes</span>
+                <span>AWS Lambda</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Apache Airflow</span>
             </div>
         </div>
         <div class="skill-cat">
-            <h4>Databases</h4>
+            <h4>Testing & Tools</h4>
             <div class="skill-tags">
-                <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>ElasticSearch</span><span>Firebase</span>
+                <span>JUnit</span><span>Mockito</span><span>Jest</span><span>Postman</span><span>Stripe API</span>
             </div>
         </div>
     </div>
 </section>
 
-<footer style="text-align: center; padding: 60px 0; border-top: 1px solid #e2e8f0; color: var(--slate); font-size: 0.8rem;">
-    <p>© 2026 Parameshwaran Anandhakumar | Built with Passion for AI & Software</p>
+<footer style="text-align: center; padding: 60px 0; border-top: 1px solid #e2e8f0; color: var(--slate); font-size: 0.9rem;">
+    <p>© 2026 Parameshwaran Anandhakumar • parameshwarananandhakumar@gmail.com</p>
 </footer>
 
 </body>
