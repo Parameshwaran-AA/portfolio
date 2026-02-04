@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Parameshwaran Anandhakumar | Portfolio</title>
-<link rel="stylesheet" href="style.css" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body>
-
 <!-- HEADER -->
 <header class="header">
   <div class="container header-container">
-
-    <div class="header-left">
-      <h1>Parameshwaran Anandhakumar</h1>
-      <p>Data Scientist • ML Engineer • Software Engineer</p>
-    </div>
-
+    <div class="logo">PA.</div>
     <nav class="header-nav">
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -26,132 +9,160 @@
       <a href="#contact">Contact</a>
       <a href="resume.pdf" target="_blank" class="resume-btn">Resume</a>
     </nav>
-
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" data-aos="fade-up">
   <div class="container hero-box">
-    <div>
+    <div class="hero-text">
+      <h1 class="name-title">Parameshwaran Anandhakumar</h1>
+      <p class="role-subtitle">Data Scientist • ML Engineer • Software Engineer</p>
       <h2>🚀 Building Intelligent Data-Driven Systems</h2>
-      <p>
+      <p class="hero-description">
         I am a Data Science graduate student and Software Engineer with expertise in machine learning,
         data engineering, and full-stack development. I design scalable AI systems and transform data into impactful insights.
       </p>
-      <a href="#projects" class="btn primary">View Projects</a>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Get In Touch</a>
+      </div>
     </div>
-    <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+    <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Profile" class="profile-img">
+    </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section" data-aos="fade-up">
   <div class="container">
-    <h2>💻 Technical Skills</h2>
+    <h2 class="section-title">📂 Featured Projects</h2>
+    <div class="grid">
+      
+      <!-- Project 1: Mental Health -->
+      <div class="card">
+        <div class="card-content">
+          <span class="tag ml">Machine Learning</span>
+          <h3>Mental Health Prediction</h3>
+          <p>Built a stacked ensemble model combining CatBoost, Random Forest, and Neural Networks with a Logistic Regression meta-model. Implemented a full ML Pipeline including cleaning, encoding, and evaluation (AUC, F1-Score).</p>
+          <div class="card-tech">
+            <span>CatBoost</span><span>Random Forest</span><span>Python</span><span>MLOps</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- Project 2: Event Booking -->
+      <div class="card">
+        <div class="card-content">
+          <span class="tag backend">Backend Systems</span>
+          <h3>Event Booking & Ticketing</h3>
+          <p>Developed a scalable Spring Boot backend with JWT security. Integrated Redis caching to reduce DB load by 40% and implemented optimistic locking to prevent double-bookings under concurrent load.</p>
+          <div class="card-tech">
+            <span>Spring Boot</span><span>Redis</span><span>JWT</span><span>Java</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: E-Commerce -->
+      <div class="card">
+        <div class="card-content">
+          <span class="tag cloud">Microservices</span>
+          <h3>E-Commerce Order Processor</h3>
+          <p>Built microservices for orders and payments using Clean Architecture. Optimized queries via database indexing and reached 84% test coverage using JUnit and Mockito.</p>
+          <div class="card-tech">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JUnit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Fable -->
+      <div class="card">
+        <div class="card-content">
+          <span class="tag fullstack">Full Stack</span>
+          <h3>Fable: Social Storytelling</h3>
+          <p>Social platform using Node.js, MongoDB, and Redis. Features ElasticSearch for scalable querying and real-time updates via Firebase and GraphQL APIs. Deployed via Docker.</p>
+          <div class="card-tech">
+            <span>Node.js</span><span>MongoDB</span><span>GraphQL</span><span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title">💻 Technical Skills</h2>
     <div class="skills-wrapper">
-
+      
       <div class="skill-group">
-        <h3>🧑‍💻 Programming & Software Development</h3>
+        <h3><i class="emoji">⌨️</i> Programming Languages</h3>
         <div class="skill-tags">
-          <span>🐍 Python</span>
-          <span>☕ Java</span>
-          <span>🟨 JavaScript</span>
-          <span>🔷 TypeScript</span>
-          <span>🗄️ SQL</span>
-          <span>💻 C</span>
-          <span>🌐 HTML</span>
+          <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>SQL</span><span>C</span><span>HTML</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>🤖 Machine Learning & AI</h3>
+        <h3><i class="emoji">📚</i> Frameworks & Libraries</h3>
         <div class="skill-tags">
-          <span>📊 Supervised Learning</span>
-          <span>🔍 Unsupervised Learning</span>
-          <span>🧠 Deep Learning</span>
-          <span>⚙️ Ensemble Models</span>
-          <span>📈 Time-Series Forecasting</span>
-          <span>🎯 Hyperparameter Tuning</span>
-          <span>✅ Model Evaluation</span>
+          <span>React.js</span><span>Redux</span><span>EKS</span><span>SageMaker</span><span>AWS Lambda</span><span>Next.js</span><span>Spring Boot</span><span>Express.js</span><span>Node.js</span><span>Django</span><span>GraphQL</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>☁️ Data & Cloud Technologies</h3>
+        <h3><i class="emoji">🗄️</i> Databases & Caching</h3>
         <div class="skill-tags">
-          <span>🐬 MySQL</span>
-          <span>🐘 PostgreSQL</span>
-          <span>🍃 MongoDB</span>
-          <span>🔥 Firebase</span>
-          <span>🔄 ETL Pipelines</span>
-          <span>🧩 Feature Engineering</span>
-          <span>☁️ GCP</span>
+          <span>MongoDB</span><span>Firebase</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>ElasticSearch</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>🛠️ Tools & Frameworks</h3>
+        <h3><i class="emoji">🚀</i> DevOps & CI/CD</h3>
         <div class="skill-tags">
-          <span>🧬 TensorFlow</span>
-          <span>🔥 PyTorch</span>
-          <span>📚 Scikit-learn</span>
-          <span>🐳 Docker</span>
-          <span>⚓ Kubernetes</span>
-          <span>🐙 GitHub</span>
-          <span>📮 Postman</span>
+          <span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Apache Airflow</span><span>Heroku</span><span>Vercel</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>🏗️ System Design & Testing</h3>
+        <h3><i class="emoji">☁️</i> Cloud & Serverless</h3>
         <div class="skill-tags">
-          <span>🔗 REST APIs</span>
-          <span>🧩 Microservices</span>
-          <span>🚀 CI/CD</span>
-          <span>🧪 Unit Testing</span>
+          <span>AWS Lambda</span><span>Google Firebase</span><span>Office 365</span><span>Google Workspace</span><span>Power Automate</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3><i class="emoji">🧪</i> Testing & Evaluation</h3>
+        <div class="skill-tags">
+          <span>Jest</span><span>Mocha</span><span>React Testing Library</span><span>JUnit</span><span>Mockito</span><span>Hugging Face Evaluate</span>
         </div>
       </div>
 
     </div>
-
-    <p class="skills-summary">
-      🌟 I work at the intersection of AI and software engineering, building end-to-end systems—from data pipelines and ML models to scalable backend services and user-facing applications.
-    </p>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container">
-    <h2>👨‍💼 Professional Journey</h2>
-    <p>
-      I worked as a Software Engineer at Ford Motor Company, collaborating with stakeholders to translate business needs into technical solutions.
-      I built forecasting models using time-series and regression techniques, contributing to a 25% increase in parts revenue.
-      I designed RESTful APIs, integrated Stripe payments, automated data pipelines, and optimized CI/CD workflows.
-    </p>
-  </div>
+<!-- ABOUT & CONTACT -->
+<section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">👨‍💼 Professional Journey</h2>
+      <p>I worked as a Software Engineer at Ford Motor Company, building forecasting models that increased revenue by 25%. I specialize in bridging the gap between robust software engineering and advanced machine learning.</p>
+    </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:parameshwarananandhakumar@gmail.com">parameshwarananandhakumar@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Parameshwaran-AA" target="_blank">github.com/Parameshwaran-AA</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/parameshwaran-anandhakumar" target="_blank">linkedin.com/in/parameshwaran-anandhakumar</a></p>
-  </div>
+<section id="contact" class="section" data-aos="fade-up">
+    <div class="container contact-box">
+      <h2 class="section-title">📬 Get In Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:parameshwarananandhakumar@gmail.com">Email</a>
+        <a href="https://github.com/Parameshwaran-AA" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/parameshwaran-anandhakumar" target="_blank">LinkedIn</a>
+      </div>
+    </div>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Parameshwaran Anandhakumar</p>
+  <p>© 2026 Parameshwaran Anandhakumar • Built with passion for Data & AI</p>
 </footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({ duration: 900, once: true });
-</script>
-
-</body>
-</html>
