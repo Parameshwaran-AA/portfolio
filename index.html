@@ -13,7 +13,7 @@
 html{scroll-behavior:smooth;font-size:16px;}
 body{
   font-family:'Mulish',sans-serif;
-  background:#080c14;
+  background:#000;
   color:#e2e8f0;
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
@@ -54,102 +54,66 @@ a{color:inherit;text-decoration:none;}
 nav{
   position:fixed;top:0;left:0;right:0;z-index:500;
   display:flex;align-items:center;justify-content:space-between;
-  padding:20px 60px;
-  background:rgba(8,12,20,.85);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid var(--border);
+  padding:18px 48px;
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(16px);
 }
 .nav-logo{
-  font-family:var(--syne);font-weight:800;font-size:1.1rem;
-  color:var(--cyan);letter-spacing:.05em;
+  font-family:'Mulish',sans-serif;font-weight:600;font-size:1rem;
+  color:#e2e8f0;letter-spacing:.01em;
 }
-.nav-links{display:flex;gap:36px;align-items:center;}
+.nav-links{display:flex;gap:32px;align-items:center;}
 .nav-links a{
-  font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--muted);transition:color .2s;position:relative;
+  font-size:.88rem;font-weight:400;
+  color:rgba(255,255,255,.55);transition:color .2s;
 }
-.nav-links a::after{
-  content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;
-  background:var(--cyan);transform:scaleX(0);transition:transform .25s;
-}
-.nav-links a:hover{color:var(--cyan);}
-.nav-links a:hover::after{transform:scaleX(1);}
+.nav-links a:hover{color:#fff;}
 .nav-resume{
-  font-family:var(--mono);font-size:.72rem;font-weight:500;
-  border:1px solid var(--cyan);color:var(--cyan);
-  padding:8px 20px;border-radius:3px;letter-spacing:.08em;
-  transition:all .2s;
+  font-size:.88rem!important;font-weight:400!important;
+  color:rgba(255,255,255,.55)!important;transition:color .2s!important;
 }
-.nav-resume:hover{background:var(--cyan);color:var(--dark);}
+.nav-resume:hover{color:#fff!important;}
 
 /* ── HERO ─────────────────────────────────────── */
 #hero{
   min-height:100vh;display:flex;align-items:center;justify-content:center;
-  position:relative;overflow:hidden;padding-top:80px;
+  position:relative;background:#000;padding-top:80px;
 }
-.hero-bg{
-  position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 80% 60% at 20% 40%, rgba(0,212,255,.07) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 60%, rgba(0,255,204,.05) 0%, transparent 60%);
+.hero-content{position:relative;text-align:center;padding:0 40px;}
+.hero-greeting{
+  font-family:'Mulish',sans-serif;font-weight:300;
+  font-size:clamp(1rem,2vw,1.25rem);
+  color:var(--muted);letter-spacing:.04em;margin-bottom:20px;
 }
-.hero-grid-lines{
-  position:absolute;inset:0;opacity:.04;
-  background-image:
-    linear-gradient(var(--cyan) 1px, transparent 1px),
-    linear-gradient(90deg, var(--cyan) 1px, transparent 1px);
-  background-size:60px 60px;
-}
-.hero-content{position:relative;text-align:center;max-width:860px;padding:0 40px;}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--cyan);border:1px solid var(--border);
-  padding:8px 20px;border-radius:30px;margin-bottom:32px;
-  background:rgba(0,212,255,.06);
-}
-.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);animation:pulse 2s ease-in-out infinite;}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.8);}}
 .hero-name{
-  font-family:var(--syne);font-weight:800;
-  font-size:clamp(3rem,7vw,5.5rem);
-  line-height:1.02;letter-spacing:-.02em;
-  margin-bottom:18px;
+  font-family:var(--syne);font-weight:700;
+  font-size:clamp(2.2rem,5.5vw,4.2rem);
+  line-height:1.12;letter-spacing:-.01em;
+  color:#e2e8f0;margin-bottom:20px;
 }
-.hero-name .line2{color:var(--cyan);}
-.hero-title{
-  font-family:var(--mono);font-size:clamp(.9rem,2vw,1.1rem);
-  color:var(--muted);letter-spacing:.12em;margin-bottom:28px;
+.hero-name .cyan{color:var(--cyan);}
+.hero-subtitle{
+  font-size:clamp(.85rem,1.6vw,1rem);
+  color:var(--muted);margin-bottom:12px;letter-spacing:.01em;
 }
-.hero-title span{color:var(--cyan2);}
-.hero-bio{
-  font-size:1rem;color:#94a3b8;max-width:620px;margin:0 auto 40px;line-height:1.8;
+.hero-subtitle .open{color:var(--cyan);font-weight:600;}
+.hero-nav-pills{
+  display:flex;gap:16px;justify-content:center;flex-wrap:wrap;
+  margin-top:52px;
 }
-.hero-bio b{color:var(--text);font-weight:600;}
-.hero-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:56px;}
-.hbtn{
-  font-family:var(--syne);font-weight:700;font-size:.85rem;letter-spacing:.06em;
-  padding:14px 32px;border-radius:4px;transition:all .25s;
+.hpill{
+  font-family:'Mulish',sans-serif;font-size:.88rem;font-weight:500;
+  padding:11px 30px;border-radius:50px;
+  border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.7);
+  transition:all .22s;letter-spacing:.02em;
 }
-.hbtn-primary{
-  background:var(--cyan);color:var(--dark);
+.hpill:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px);}
+.hero-chevron{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.25);font-size:1.4rem;animation:bounce 2s ease-in-out infinite;
+  cursor:pointer;
 }
-.hbtn-primary:hover{background:var(--cyan2);transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,212,255,.3);}
-.hbtn-outline{border:1px solid var(--border);color:var(--text);}
-.hbtn-outline:hover{border-color:var(--cyan);color:var(--cyan);transform:translateY(-3px);}
-.hero-stats{
-  display:flex;gap:48px;justify-content:center;flex-wrap:wrap;
-  border-top:1px solid var(--border);padding-top:40px;
-}
-.hstat-num{font-family:var(--syne);font-weight:800;font-size:2rem;color:var(--cyan);display:block;}
-.hstat-lbl{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
-.scroll-hint{
-  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
-  font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-}
-.scroll-line{width:1px;height:40px;background:linear-gradient(var(--cyan),transparent);animation:scrollDrop 1.5s ease-in-out infinite;}
-@keyframes scrollDrop{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}100%{transform:scaleY(0);transform-origin:bottom;}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
 
 /* ── SECTION COMMON ───────────────────────────── */
 section{padding:100px 60px;}
@@ -349,7 +313,7 @@ footer span{color:var(--cyan);}
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">PA_</div>
+  <div class="nav-logo">Parameshwaran Anandhakumar</div>
   <div class="nav-links">
     <a href="#projects">Projects</a>
     <a href="#timeline">Experience</a>
@@ -362,34 +326,26 @@ footer span{color:var(--cyan);}
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid-lines"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span class="badge-dot"></span>Open to Work · Buffalo, NY · MS Data Science @ UB</div>
+    <p class="hero-greeting">Hello World, This is</p>
     <h1 class="hero-name">
-      Parameshwaran<br/>
-      <span class="line2">Anandhakumar</span>
+      Parameshwaran <span class="cyan">Anandhakumar</span>
     </h1>
-    <p class="hero-title">
-      <span>AI Engineer</span> &nbsp;·&nbsp; <span>ML Engineer</span> &nbsp;·&nbsp; <span>Software Engineer</span>
+    <p class="hero-subtitle">
+      Software Engineer @ Ford (Ex) &nbsp;|&nbsp; MS Data Science @ UB &nbsp;|&nbsp; <span class="open">Open to work</span>
     </p>
-    <p class="hero-bio">
-      Software Engineer with <b>3+ years at Ford Motor Company</b> shipping production AI systems,
-      forecasting pipelines, and scalable backend services. I build intelligent systems that work in the real world —
-      not just in notebooks.
+    <p class="hero-subtitle" style="margin-top:6px;font-size:.88rem;">
+      AI Engineer &nbsp;·&nbsp; ML Engineer &nbsp;·&nbsp; Software Engineer
     </p>
-    <div class="hero-btns">
-      <a href="#projects" class="hbtn hbtn-primary">View My Work</a>
-      <a href="#contact" class="hbtn hbtn-outline">Get In Touch</a>
-    </div>
-    <div class="hero-stats">
-      <div><span class="hstat-num">+25%</span><span class="hstat-lbl">Revenue via AI Forecasting</span></div>
-      <div><span class="hstat-num">50%</span><span class="hstat-lbl">Ops Efficiency Gain</span></div>
-      <div><span class="hstat-num">~92%</span><span class="hstat-lbl">Deep Learning Accuracy</span></div>
-      <div><span class="hstat-num">3 yrs</span><span class="hstat-lbl">Enterprise at Ford</span></div>
+    <div class="hero-nav-pills">
+      <a href="#projects"       class="hpill">Projects</a>
+      <a href="#timeline"       class="hpill">Timeline</a>
+      <a href="#skills"         class="hpill">Skills</a>
+      <a href="#certifications" class="hpill">Certs</a>
+      <a href="#contact"        class="hpill">Contact</a>
     </div>
   </div>
-  <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
+  <div class="hero-chevron" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">&#8964;</div>
 </section>
 
 <!-- PROJECTS -->
@@ -735,8 +691,8 @@ footer span{color:var(--cyan);}
       Based in Buffalo, NY — available immediately. Open to remote & relocation.
     </p>
     <div class="contact-links">
-      <a href="mailto:parameshwarananadhakumar@gmail.com" class="clink">
-        <span class="clink-icon">✉️</span>parameshwarananadhakumar@gmail.com
+      <a href="/cdn-cgi/l/email-protection#d5a5b4a7b4b8b0a6bda2b4a7b4bbb4bbb4b1bdb4bea0b8b4a795b2b8b4bcb9fbb6bab8" class="clink">
+        <span class="clink-icon">✉️</span><span class="__cf_email__" data-cfemail="d9a9b8abb8b4bcaab1aeb8abb8b7b8b7b8bdb1b8b2acb4b8ab99beb4b8b0b5f7bab6b4">[email&#160;protected]</span>
       </a>
       <a href="https://linkedin.com/in/parameshwaran-anandhakumar" target="_blank" class="clink">
         <span class="clink-icon">💼</span>LinkedIn Profile
@@ -763,7 +719,7 @@ footer span{color:var(--cyan);}
   Designed & developed by <span>Parameshwaran Anandhakumar</span> &nbsp;·&nbsp; © 2026 &nbsp;·&nbsp; Buffalo, NY
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Custom cursor
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursorRing');
@@ -800,12 +756,4 @@ function handleSubmit(e) {
 // Scroll reveal
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.tl-card,.skill-group,.cert-card,.proj-layout').forEach(el => {
-  el.style.opacity='0'; el.style.transform='translateY(20px)';
-  el.style.transition='opacity .6s ease, transform .6s ease';
-  obs.observe(el);
-});
-</script>
-</body>
-</html>
+}, { threshold: 
