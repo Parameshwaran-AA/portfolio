@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Parameshwaran Anandhakumar — Backend &amp; AI Infrastructure</title>
-<meta name="description" content="Software engineer building backend services and AI infrastructure. LLM serving, GPU scheduling, distributed systems.">
+<title>Parameshwaran Anandhakumar — Backend, Data &amp; ML Systems</title>
+<meta name="description" content="Software engineer building backend services, data pipelines, and ML systems in production. Java, Python, Spark, LLM serving, distributed systems.">
 <script>if("IntersectionObserver"in window)document.documentElement.className="js"</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +95,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 .tr-foot{padding:10px 16px;border-top:1px solid var(--line);font-family:var(--data);font-size:10px;color:var(--tx3)}
 
 /* ── metric panel ──────────────────────────────── */
-.mets{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);border:1px solid var(--line);margin-top:26px}
+.mets{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line2);border:1px solid var(--line);margin-top:26px}
 .met{background:var(--surf);padding:18px 18px 16px;position:relative;overflow:hidden}
 .met::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:linear-gradient(90deg,var(--m2),var(--m4));opacity:.5}
 .met-v{font-family:var(--disp);font-weight:700;font-size:clamp(19px,2.3vw,25px);letter-spacing:-.05em;color:var(--m4);line-height:1.15}
@@ -161,6 +161,25 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 .go{font-family:var(--data);font-size:10.5px;letter-spacing:.08em;color:var(--m3);text-decoration:none;margin-top:16px;align-self:flex-start;display:inline-flex;gap:6px;transition:gap .2s,color .2s}
 .go:hover{gap:11px;color:var(--m4)}
 .go.dis{color:var(--tx3);pointer-events:none}
+
+/* flow diagram shared by the project sections */
+.flow{border:1px solid var(--line);background:var(--bg2);padding:16px}
+.flow-c{font-family:var(--data);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:14px}
+.fn{border:1px solid var(--line);background:var(--surf);padding:8px 11px;font-family:var(--data);font-size:10.5px;color:var(--tx2);position:relative}
+.fn b{color:var(--tx);font-weight:500}
+.fn.hi{border-color:var(--m2);color:var(--tx)}
+.fn.out{border-color:var(--m4);color:var(--m4)}
+.fn+.fn{margin-top:20px}
+.fn+.fn::before{content:"↓";position:absolute;top:-17px;left:14px;color:var(--m1);font-size:11px;line-height:1}
+.frow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px;position:relative}
+.frow .fn{flex:1;min-width:0;margin-top:0}
+.frow .fn+.fn::before{display:none}
+.frow::after{content:"↓";position:absolute;bottom:-17px;left:14px;color:var(--m1);font-size:11px;line-height:1}
+.floop{font-family:var(--data);font-size:9.5px;color:var(--m4);border-left:2px solid var(--m4);padding-left:11px;margin-top:14px;line-height:1.5}
+.fkey{display:flex;flex-wrap:wrap;gap:13px;padding-top:12px;margin-top:14px;border-top:1px solid var(--line2)}
+.fkey span{font-family:var(--data);font-size:9.5px;color:var(--tx3);display:flex;align-items:center;gap:5px}
+.proj{border:1px solid var(--line);background:var(--surf);padding:28px;margin-bottom:18px}
+.proj .hp-t{margin-bottom:16px}
 
 /* ── education + stack ─────────────────────────── */
 .eg{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -229,7 +248,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 <aside class="rail">
   <div>
     <div class="sig">PARAMESHWARAN<span>ANANDHAKUMAR</span></div>
-    <div class="role">Backend &amp; AI Infrastructure<br>Santa Clara, CA</div>
+    <div class="role">Backend · Data · ML Systems<br>Santa Clara, CA</div>
     <div class="live"><span class="blip"></span>Open to roles</div>
   </div>
   <nav class="rnav">
@@ -243,7 +262,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
   <div class="rout">
     <a href="https://github.com/Parameshwaran-AA">GitHub ↗</a>
     <a href="https://linkedin.com/in/parameshwaran-anandhakumar">LinkedIn ↗</a>
-    <a href="mailto:parameshwaranan.anandha@gmail.com">Email ↗</a>
+    <a href="mailto:parameshwarananandhakumar@gmail.com">Email ↗</a>
   </div>
 </aside>
 
@@ -252,17 +271,18 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 <!-- HERO + TRACE ─────────────────────────────── -->
 <section class="hero pad" id="trace">
   <div class="eyebrow">Software Engineer · <em>4+ years</em> · Ford → University at Buffalo</div>
-  <h1>I make GPUs stop<br>redoing <span class="g">work they<br>already did.</span></h1>
+  <h1>I find where systems<br>do <span class="g">work they do<br>not need to do.</span></h1>
   <p class="lede">
-    Backend services, data infrastructure, and models in production. At Ford I owned the
+    Backend services, data pipelines, and ML systems in production. At Ford I owned the
     <b>Java and Spring Boot REST API platform</b> behind half a million transactions a month
-    across 11 dealer networks. Lately I have been deep in <b>LLM serving</b>: why a GPU throws
-    away a 40,000-token cache seconds before it needs it again, and what it costs you.
+    across 11 dealer networks, the <b>Spark and Airflow pipelines</b> feeding it, and a
+    <b>forecasting model</b> serving live predictions on top. Lately I have been deep in
+    <b>LLM serving</b>: why a GPU throws away a 40,000-token cache seconds before it needs
+    it again, and what it costs you.
   </p>
   <div class="cta">
     <a class="btn btn-p" href="#builds">View builds</a>
     <a class="btn" href="https://github.com/Parameshwaran-AA/agentserve">AgentServe repo ↗</a>
-    <a class="btn" href="Resume.pdf">Résumé</a>
   </div>
 
   <div class="trace">
@@ -282,7 +302,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
       <div class="tr-lane">
         <div class="tr-lab">work</div>
         <div class="tr-row">
-          <div class="span sp2" style="left:15.7%;width:13.9%;animation-delay:.2s" title="AI/ML Software Engineer · Jun 2019 to Sep 2020">AI/ML Eng</div>
+          <div class="span sp2" style="left:15.7%;width:13.9%;animation-delay:.2s" title="AI/ML Engineer · Jun 2019 to Sep 2020">AI/ML Eng</div>
           <div class="span sp3" style="left:50%;width:33.3%;animation-delay:.32s" title="Software Engineer, Ford Motor Company · Jul 2022 to Jul 2025">Ford Motor Company · 3y 0mo</div>
           <div class="span sp2" style="left:93.5%;width:6%;animation-delay:.62s" title="University at Buffalo · Jun 2026 to present">UB</div>
         </div>
@@ -301,6 +321,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
   <div class="mets">
     <div class="met"><div class="met-v">500K+</div><div class="met-k">txn / month</div><div class="met-s">Ford parts platform</div></div>
     <div class="met"><div class="met-v">−70%</div><div class="met-k">query runtime</div><div class="met-s">2M+ daily records</div></div>
+    <div class="met"><div class="met-v">−38%</div><div class="met-k">stockout risk</div><div class="met-s">forecasting in production</div></div>
     <div class="met"><div class="met-v">&lt;100ms</div><div class="met-k">search latency</div><div class="met-s">UB Atlas, self-hosted</div></div>
     <div class="met"><div class="met-v">−81%</div><div class="met-k">gpu compute</div><div class="met-s">AgentServe benchmark</div></div>
   </div>
@@ -310,7 +331,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 <section class="sec pad" id="work">
   <div class="shead"><span class="stag">02 / Experience</span><span class="sline"></span></div>
   <h2>Where I have shipped</h2>
-  <p class="ssub">Owned end to end, from design review through live production incidents.</p>
+  <p class="ssub">Backend services, distributed data pipelines, machine learning in production, and the data modeling underneath. Owned end to end, from design review through live production incidents.</p>
 
   <article class="job rv">
     <div class="job-h">
@@ -323,10 +344,11 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     </div>
     <div class="job-b">
       <ul>
-        <li>Cut an external <b>LLM API</b> out of the critical path of UB Atlas, a research-to-funding matching platform, replacing it with self-hosted <b>Sentence Transformer embeddings</b> (all-MiniLM-L6-v2) and cosine similarity ranking over 1,821 faculty profiles. Per-query API cost went to zero and search latency <span class="num">under 100ms</span>.</li>
+        <li>Cut an external <b>LLM API</b> out of the critical path of UB Atlas, a research-to-funding matching platform, replacing it with self-hosted <b>Sentence Transformer embeddings</b> (all-MiniLM-L6-v2) and cosine similarity ranking across the faculty profile corpus. Per-query API cost went to zero and search latency <span class="num">under 100ms</span>.</li>
+        <li><b>Evaluated candidate embedding models and measured retrieval quality</b> before promoting one to production, then served it as a Python ML matching service behind the public API.</li>
         <li>Shipped the platform end to end: a <b>Node.js and Express REST API</b> documented in Swagger/OpenAPI, a Python ML matching service, MongoDB persistence, and a <b>React 18 and TypeScript</b> front end with instant command-palette search.</li>
         <li>Containerized the stack behind <b>Docker Compose</b> and an <b>Nginx</b> reverse proxy with health checks and environment-scoped configs, reducing a multi-terminal setup to one reproducible command.</li>
-        <li>Engineered a record reconciliation pipeline normalizing identifiers across 275 scraped affiliate records and a 1,821-document store, reaching an <span class="num">83% match rate</span> with zero duplicates, covered by an automated API, ML, and database test suite.</li>
+        <li>Engineered a record reconciliation pipeline normalizing identifiers across scraped affiliate data and the faculty profile store, <b>eliminating duplicate records</b>, covered by an automated API, ML, and database test suite.</li>
       </ul>
       <div class="tags"><span>Node.js</span><span>Express</span><span>Python</span><span>MongoDB</span><span>React 18</span><span>TypeScript</span><span>Docker</span><span>Nginx</span></div>
     </div>
@@ -344,9 +366,9 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <div class="job-b">
       <ul>
         <li>Designed and shipped the <b>REST API platform layer</b> for order management, pricing, and delivery in <b>Java, Spring Boot, MySQL, and React.js</b>, sustaining <span class="num">500K+ transactions a month</span> across 11 dealer networks and cutting order processing <span class="num">55%</span>.</li>
-        <li>Built the distributed pipelines moving dealer inventory and parts demand data on <b>Apache Spark, Apache Airflow, and dbt Core</b>, modeled in <b>Snowflake</b>, cutting ETL latency <span class="num">20%</span> and giving downstream teams one consistent view across 11 networks.</li>
-        <li>Productionized a <b>demand forecasting</b> and vendor priority scoring model as a real-time inference service in <b>Python, FastAPI, and PostgreSQL</b>, serving time-series predictions that reduced stockout risk <span class="num">38%</span> across 3 networks.</li>
-        <li>Optimized <b>MySQL</b> warehouse performance across 2M+ daily records by rewriting 50+ queries against EXPLAIN plans, reworking schemas and indexing strategy, and adding table partitioning, cutting average query runtime <span class="num">70%</span> while holding throughput stable at peak load.</li>
+        <li>Built the distributed pipelines moving dealer inventory and parts demand data on <b>Apache Spark, Apache Airflow, and dbt Core</b>, modeled in <b>Snowflake</b>, replacing fragmented per-network reporting with one consistent data model used by <span class="num">10 internal teams</span> and external partner systems including joint-venture dealers and government portals.</li>
+        <li>Productionized a <b>demand forecasting</b> and vendor priority scoring model as a real-time inference service in <b>Python, FastAPI, and PostgreSQL</b>, serving time-series predictions that reduced stockout risk <span class="num">38%</span>.</li>
+        <li>Optimized <b>MySQL</b> warehouse performance across 2M+ daily records by rewriting queries against EXPLAIN plans, reworking schemas and indexing strategy, and adding table partitioning, cutting average query runtime <span class="num">70%</span> while holding throughput stable at peak load.</li>
         <li>Replaced a largely manual release process with automated <b>CI/CD</b> across <b>Jenkins, GitLab CI, and AWS CodePipeline</b>, adding Docker-based build and test orchestration that shortened release cycles <span class="num">30%</span>.</li>
         <li>Converted live incident triage and root cause analysis into permanent fixes, working with globally distributed engineering and dealer operations teams.</li>
       </ul>
@@ -358,17 +380,18 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <div class="job-h">
       <div>
         <div class="job-org">RMD Engineering College</div>
-        <div class="job-t">AI/ML Software Engineer</div>
-        <div class="job-u">Applied AI research</div>
+        <div class="job-t">AI/ML Engineer</div>
+        <div class="job-u">Research Lab · applied industry projects</div>
       </div>
       <div class="job-w">Jun 2019 — Sep 2020<br><span class="chip">1y 4mo</span></div>
     </div>
     <div class="job-b">
       <ul>
-        <li>Trained and benchmarked custom <b>CNN, AlexNet, and LeNet</b> architectures for MRI classification to <span class="num">92% validation accuracy</span>, a <span class="num">20% gain</span> over baseline, on <b>AWS SageMaker</b> with S3-backed dataset versioning and EC2 training instances.</li>
-        <li>Deployed the selected model behind a <b>Django REST service</b> fronted by <b>AWS Lambda</b>, returning inference in <span class="num">under 1 second</span> and scaling to demand without idle compute.</li>
+        <li>Built a <b>payment reconciliation platform</b> in <b>Java</b> and <b>Spring Boot</b> that automatically matched <b>UPI/IMPS transactions</b> against settlement and internal ledger records and flagged reconciliation exceptions, with <b>PostgreSQL</b> persistence and <b>Kafka</b> event streaming.</li>
+        <li>Integrated a Python-based <b>ML transaction-matching service</b> using <b>XGBoost/Random Forest</b>, scikit-learn, and Pandas to match payment records and classify settlement exceptions; evaluated <b>precision, recall, F1-score</b>, and end-to-end reconciliation processing time.</li>
+        <li>Engineered the matching features from transaction, settlement, and ledger records, covering same-transaction identification and settlement exception classification.</li>
       </ul>
-      <div class="tags"><span>Python</span><span>PyTorch</span><span>Django</span><span>SageMaker</span><span>Lambda</span><span>EC2</span><span>S3</span></div>
+      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Python</span><span>XGBoost</span><span>scikit-learn</span><span>PostgreSQL</span><span>Kafka</span></div>
     </div>
   </article>
 </section>
@@ -377,7 +400,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 <section class="sec pad" id="builds">
   <div class="shead"><span class="stag">03 / Builds</span><span class="sline"></span></div>
   <h2>Things I built to answer a question</h2>
-  <p class="ssub">Each started because a system did not behave the way I expected.</p>
+  <p class="ssub">Serving infrastructure, agent systems, data platforms, and backend services. Each started because a system did not behave the way I expected.</p>
 
   <article class="hero-proj rv">
     <div class="hp-top">
@@ -431,51 +454,197 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
       <div class="hpm"><div class="hpm-v">−81%</div><div class="hpm-k">gpu compute time</div></div>
       <div class="hpm"><div class="hpm-v">−25%</div><div class="hpm-k">p95 job completion</div></div>
     </div>
-    <div class="tags"><span>Python</span><span>FastAPI</span><span>vLLM</span><span>Kubernetes</span><span>Redis</span><span>Helm</span><span>Docker</span><span>Prometheus</span><span>Grafana</span><span>135 tests · 6 CI jobs</span></div>
+    <div class="tags"><span>Python</span><span>FastAPI</span><span>vLLM</span><span>Kubernetes</span><span>Redis</span><span>Helm</span><span>Docker</span><span>Prometheus</span><span>Grafana</span><span>automated CI</span></div>
     <a class="go" href="https://github.com/Parameshwaran-AA/agentserve" style="margin-top:14px">Read the code →</a>
   </article>
 
-  <div class="pg">
-    <article class="card rv">
-      <span class="hp-dom">Multi-Agent Systems</span>
-      <h3>AutoDevX</h3>
-      <p>Turns product requirements into implementation plans, architecture, executable Python, and pytest suites. Five agents — Planner, Architect, Coder, Tester, Debugger — run through a tool-execution layer with a self-correction loop that regenerates fixes on failing tests.</p>
-      <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>FAISS</span><span>Docker</span></div>
-      <a class="go" href="https://github.com/Parameshwaran-AA/AutoDEV">Read the code →</a>
-    </article>
+  <article class="proj rv">
+    <div class="hp-top">
+      <span class="hp-dom">Multi-Agent Systems · Code Generation</span>
+    </div>
+    <h3 class="hp-t">AutoDevX — five agents, one self-correcting loop</h3>
+    <div class="hp-grid">
+      <div>
+        <p>Takes a product requirement and returns an implementation plan, an architecture,
+        executable Python, and a pytest suite. The hard part is not generation, it is what
+        happens when the generated code fails its own tests.</p>
+        <p>Five agents run in sequence through a shared tool-execution layer. The Tester runs
+        the suite for real rather than predicting a result, and a failure routes to the Debugger,
+        which regenerates against the actual traceback and sends the patched code back through
+        the tests. Retrieval over prior context runs on FAISS, with PostgreSQL holding run state.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-c">requirement → tested code</div>
+        <div class="fn hi"><b>Planner</b> · decomposes the requirement</div>
+        <div class="fn"><b>Architect</b> · module and interface design</div>
+        <div class="fn"><b>Coder</b> · executable Python</div>
+        <div class="fn"><b>Tester</b> · runs the pytest suite for real</div>
+        <div class="fn out"><b>Debugger</b> · regenerates against the traceback</div>
+        <div class="floop">↺ failing tests route back to the Coder, not to the user</div>
+      </div>
+    </div>
+    <div class="hp-mets">
+      <div class="hpm"><div class="hpm-v">5</div><div class="hpm-k">agents in the pipeline</div></div>
+      <div class="hpm"><div class="hpm-v">4</div><div class="hpm-k">artifacts per run</div></div>
+      <div class="hpm"><div class="hpm-v">closed</div><div class="hpm-k">test-fix-retest loop</div></div>
+    </div>
+    <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>FAISS</span><span>Docker</span></div>
+    <a class="go" href="https://github.com/Parameshwaran-AA/AutoDEV" style="margin-top:14px">Read the code →</a>
+  </article>
 
-    <article class="card rv">
-      <span class="hp-dom">Agentic AI · RAG</span>
-      <h3>WearWise</h3>
-      <p>Recommends outfits from a user's own wardrobe with a ReAct tool-calling loop that searches wardrobe items and retrieves fashion norms via agentic RAG. Every recommendation is grounded in cited sources, with multimodal photo interpretation. 28 tests.</p>
-      <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>RAG</span><span>ReAct</span></div>
-      <a class="go" href="https://github.com/Parameshwaran-AA/WearWise">Read the code →</a>
-    </article>
+  <article class="proj rv">
+    <div class="hp-top">
+      <span class="hp-dom">Agentic AI · Retrieval</span>
+    </div>
+    <h3 class="hp-t">WearWise — recommendations that have to cite a source</h3>
+    <div class="hp-grid">
+      <div>
+        <p>Most recommenders answer from whatever the model absorbed in training. This one is
+        constrained twice: it can only suggest clothes the user actually owns, and every style
+        claim it makes has to come back to a retrieved source.</p>
+        <p>A ReAct loop decides between two tools on each turn, searching the wardrobe or
+        retrieving fashion norms through agentic RAG, and keeps going until it can ground the
+        recommendation. Uploaded photos are interpreted multimodally and written into the
+        wardrobe, so the catalogue builds itself from what the user wears.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-c">react loop · one recommendation</div>
+        <div class="fn hi"><b>Thought</b> · what is still missing?</div>
+        <div class="frow">
+          <div class="fn"><b>wardrobe search</b></div>
+          <div class="fn"><b>RAG retrieval</b></div>
+        </div>
+        <div class="fn"><b>Observation</b> · items and cited norms</div>
+        <div class="fn out"><b>Grounded recommendation</b> · sources attached</div>
+        <div class="floop">↺ loops until grounded, rather than answering from model memory</div>
+      </div>
+    </div>
+    <div class="hp-mets">
+      <div class="hpm"><div class="hpm-v">2</div><div class="hpm-k">tools in the loop</div></div>
+      <div class="hpm"><div class="hpm-v">cited</div><div class="hpm-k">every recommendation</div></div>
+      <div class="hpm"><div class="hpm-v">28</div><div class="hpm-k">automated tests</div></div>
+    </div>
+    <div class="tags"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>RAG</span><span>ReAct</span><span>Multimodal</span></div>
+    <a class="go" href="https://github.com/Parameshwaran-AA/WearWise" style="margin-top:14px">Read the code →</a>
+  </article>
 
-    <article class="card rv">
-      <span class="hp-dom">Data Engineering · Agents</span>
-      <h3>DataPilot</h3>
-      <p>Ingests raw datasets from CSV, APIs, S3, and Kafka with LLM-powered schema discovery, self-correcting transformations, anomaly detection, and full data lineage. Built on LangGraph with Airflow DAGs.</p>
-      <div class="tags"><span>LangGraph</span><span>PySpark</span><span>DuckDB</span><span>Kafka</span><span>Airflow</span></div>
-      <a class="go" href="https://github.com/Parameshwaran-AA/Datapilot/tree/main">Read the code →</a>
-    </article>
+  <article class="proj rv">
+    <div class="hp-top">
+      <span class="hp-dom">Data Engineering · Pipelines</span>
+    </div>
+    <h3 class="hp-t">DataPilot — pipelines that repair their own transformations</h3>
+    <div class="hp-grid">
+      <div>
+        <p>Ingestion breaks when the schema moves. The usual answer is a human rewriting the
+        transformation every time a column is renamed or a type drifts. DataPilot puts schema
+        discovery in front of the transformation and lets the pipeline correct itself.</p>
+        <p>Raw data arrives from files, APIs, object storage, and streams. An LLM step infers
+        the schema, transformations validate against it, and a failure regenerates the transform
+        instead of halting the DAG. Anomaly detection runs on the output and lineage is tracked
+        across the whole path, so a bad number downstream can be traced to the row that caused it.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-c">ingest → validated, traceable output</div>
+        <div class="frow">
+          <div class="fn">CSV</div>
+          <div class="fn">APIs</div>
+          <div class="fn">S3</div>
+          <div class="fn">Kafka</div>
+        </div>
+        <div class="fn hi"><b>Schema discovery</b> · LLM-inferred</div>
+        <div class="fn"><b>Transformation</b> · validated, self-correcting</div>
+        <div class="fn"><b>Anomaly detection</b> · on the output</div>
+        <div class="fn out"><b>Lineage</b> · traced end to end</div>
+        <div class="floop">↺ a failed transform regenerates rather than failing the DAG</div>
+      </div>
+    </div>
+    <div class="hp-mets">
+      <div class="hpm"><div class="hpm-v">4</div><div class="hpm-k">ingestion sources</div></div>
+      <div class="hpm"><div class="hpm-v">auto</div><div class="hpm-k">schema discovery</div></div>
+      <div class="hpm"><div class="hpm-v">full</div><div class="hpm-k">data lineage</div></div>
+    </div>
+    <div class="tags"><span>LangGraph</span><span>PySpark</span><span>DuckDB</span><span>Kafka</span><span>Airflow</span></div>
+    <a class="go" href="https://github.com/Parameshwaran-AA/Datapilot/tree/main" style="margin-top:14px">Read the code →</a>
+  </article>
 
-    <article class="card rv">
+  <article class="proj rv">
+    <div class="hp-top">
+      <span class="hp-dom">Backend Architecture · Concurrency</span>
+    </div>
+    <h3 class="hp-t">Event Booking — two people, one seat, one winner</h3>
+    <div class="hp-grid">
+      <div>
+        <p>Ticketing is a concurrency problem wearing a CRUD costume. Two requests read the same
+        seat as available in the same millisecond and both write a booking. Pessimistic locking
+        solves it and destroys throughput at exactly the moment you have traffic.</p>
+        <p>This backend uses optimistic locking instead: both writes are allowed to proceed, the
+        version check rejects the loser, and the client retries against fresh state. Hot read
+        paths are served from Redis rather than the database, and JWT handles auth on every
+        request. Integration tests cover the contended path, not just the happy one.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-c">concurrent booking · same seat</div>
+        <div class="frow">
+          <div class="fn">Request A · reads v4</div>
+          <div class="fn">Request B · reads v4</div>
+        </div>
+        <div class="fn hi"><b>Version check at write</b> · compare-and-set on v4</div>
+        <div class="frow">
+          <div class="fn out">A commits · v5</div>
+          <div class="fn">B rejected · retries on v5</div>
+        </div>
+        <div class="fn"><b>Redis cache</b> · serves hot reads off the write path</div>
+        <div class="fkey">
+          <span><i class="sw" style="background:#FF9A62"></i>committed</span>
+          <span><i class="sw" style="background:#22222F"></i>retried, never double-booked</span>
+        </div>
+      </div>
+    </div>
+    <div class="hp-mets">
+      <div class="hpm"><div class="hpm-v">−40%</div><div class="hpm-k">database load</div></div>
+      <div class="hpm"><div class="hpm-v">zero</div><div class="hpm-k">double bookings</div></div>
+      <div class="hpm"><div class="hpm-v">covered</div><div class="hpm-k">integration tests</div></div>
+    </div>
+    <div class="tags"><span>Java</span><span>Spring Boot</span><span>Redis</span><span>MySQL</span><span>JWT</span><span>Optimistic locking</span></div>
+    <span class="go dis" style="margin-top:14px">Private repository</span>
+  </article>
+
+  <article class="proj rv">
+    <div class="hp-top">
       <span class="hp-dom">Full Stack · Search</span>
-      <h3>Fable</h3>
-      <p>Social storytelling platform on Node.js, MongoDB, and Redis, with ElasticSearch for scalable full-text querying and GraphQL for the real-time API layer. Containerized with Docker Compose.</p>
-      <div class="tags"><span>Node.js</span><span>GraphQL</span><span>ElasticSearch</span><span>MongoDB</span><span>Redis</span></div>
-      <a class="go" href="https://github.com/Parameshwaran-AA/Fable">Read the code →</a>
-    </article>
+    </div>
+    <h3 class="hp-t">Fable — one request, four data stores</h3>
+    <div class="hp-grid">
+      <div>
+        <p>A social storytelling platform where the interesting problem is routing. Full-text
+        search, the document store, and the hot cache all want the same request for different
+        reasons, and the API layer has to decide which one answers.</p>
+        <p>GraphQL fronts the whole thing so a client asks for exactly the fields it needs in one
+        round trip instead of chaining REST calls. ElasticSearch handles full-text querying across
+        stories, MongoDB holds the documents, and Redis keeps the hot reads off both. The stack
+        runs under Docker Compose.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-c">request routing</div>
+        <div class="fn hi"><b>GraphQL layer</b> · one round trip, client-shaped response</div>
+        <div class="frow">
+          <div class="fn"><b>ElasticSearch</b><br>full-text</div>
+          <div class="fn"><b>MongoDB</b><br>documents</div>
+          <div class="fn"><b>Redis</b><br>hot reads</div>
+        </div>
+        <div class="fn out"><b>Node.js and Express</b> · resolves and composes</div>
+        <div class="floop">the resolver picks the store, the client never knows there are three</div>
+      </div>
+    </div>
+    <div class="hp-mets">
+      <div class="hpm"><div class="hpm-v">3</div><div class="hpm-k">data stores behind one API</div></div>
+      <div class="hpm"><div class="hpm-v">1</div><div class="hpm-k">round trip per query</div></div>
+      <div class="hpm"><div class="hpm-v">compose</div><div class="hpm-k">containerized stack</div></div>
+    </div>
+    <div class="tags"><span>Node.js</span><span>GraphQL</span><span>ElasticSearch</span><span>MongoDB</span><span>Redis</span><span>Docker</span></div>
+    <a class="go" href="https://github.com/Parameshwaran-AA/Fable" style="margin-top:14px">Read the code →</a>
+  </article>
 
-    <article class="card rv">
-      <span class="hp-dom">Backend Architecture</span>
-      <h3>Event Booking &amp; Ticketing</h3>
-      <p>Spring Boot backend with Redis caching and JWT security. Cut database load 40% and prevented double-booking through optimistic locking, covered by integration tests.</p>
-      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Redis</span><span>MySQL</span><span>JWT</span></div>
-      <span class="go dis">Private repository</span>
-    </article>
-  </div>
 </section>
 
 <!-- EDUCATION ────────────────────────────────── -->
@@ -492,7 +661,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <div class="ec rv">
       <h3>B.Tech Information Technology</h3>
       <div class="w">Anna University, Chennai</div>
-      <div class="d">Aug 2018 — May 2022</div>
+      <div class="d">Aug 2018 — Jun 2022</div>
       <p>CS fundamentals, data structures and algorithms, object-oriented programming, software engineering.</p>
     </div>
   </div>
@@ -507,7 +676,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <div class="srow"><div class="sk">Languages</div><div class="sv"><span>Python</span><span>Java</span><span>SQL</span><span>TypeScript</span><span>JavaScript</span><span>C++</span><span>Bash</span><span>Scala</span></div></div>
     <div class="srow"><div class="sk">Backend / APIs</div><div class="sv"><span>FastAPI</span><span>Spring Boot</span><span>Django</span><span>Node.js</span><span>Express</span><span>REST</span><span>GraphQL</span><span>Microservices</span><span>OpenAPI</span><span>React.js</span></div></div>
     <div class="srow"><div class="sk">Data / Pipelines</div><div class="sv"><span>Apache Spark</span><span>Airflow</span><span>dbt Core</span><span>Kafka</span><span>PySpark</span><span>ETL/ELT</span></div></div>
-    <div class="srow"><div class="sk">ML / AI Systems</div><div class="sv"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>vLLM</span><span>Sentence Transformers</span><span>Model serving</span><span>Inference optimization</span><span>RAG</span><span>FAISS</span><span>LangChain</span></div></div>
+    <div class="srow"><div class="sk">ML / AI Systems</div><div class="sv"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>vLLM</span><span>Sentence Transformers</span><span>XGBoost</span><span>Random Forest</span><span>Feature engineering</span><span>Model evaluation</span><span>Time-series forecasting</span><span>Model serving</span><span>Inference optimization</span><span>RAG</span><span>FAISS</span><span>LangChain</span></div></div>
     <div class="srow"><div class="sk">Infrastructure</div><div class="sv"><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Nginx</span><span>Prometheus</span><span>Grafana</span><span>Jenkins</span><span>GitLab CI</span><span>GitHub Actions</span></div></div>
     <div class="srow"><div class="sk">Cloud / Storage</div><div class="sv"><span>AWS S3</span><span>EC2</span><span>Lambda</span><span>SageMaker</span><span>EKS</span><span>Glue</span><span>Snowflake</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span></div></div>
     <div class="srow"><div class="sk">Practices</div><div class="sv"><span>System design</span><span>Code review</span><span>pytest</span><span>JUnit</span><span>Jest</span><span>Incident triage</span><span>Root cause analysis</span><span>Agile</span></div></div>
@@ -517,10 +686,10 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
 <!-- CONTACT ──────────────────────────────────── -->
 <section class="contact pad" id="contact">
   <div class="shead"><span class="stag">06 / Contact</span><span class="sline"></span></div>
-  <div class="ct">Got a hard <span class="g">infrastructure problem?</span></div>
-  <p class="ssub" style="margin-bottom:0">Open to backend, AI infrastructure, and platform engineering roles. The fastest way to reach me is email.</p>
+  <div class="ct">Got a hard <span class="g">systems problem?</span></div>
+  <p class="ssub" style="margin-bottom:0">Open to backend, platform, ML engineering, AI infrastructure, and data science roles. The fastest way to reach me is email.</p>
   <div class="cl">
-    <a class="btn btn-p" href="mailto:parameshwaranan.anandha@gmail.com">parameshwaranan.anandha@gmail.com</a>
+    <a class="btn btn-p" href="mailto:parameshwarananandhakumar@gmail.com">parameshwarananandhakumar@gmail.com</a>
     <a class="btn" href="https://linkedin.com/in/parameshwaran-anandhakumar">LinkedIn ↗</a>
     <a class="btn" href="https://github.com/Parameshwaran-AA">GitHub ↗</a>
   </div>
