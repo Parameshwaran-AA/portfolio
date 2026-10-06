@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Parameshwaran Anandhakumar — Backend, Data &amp; ML Systems</title>
-<meta name="description" content="Software engineer building backend services, data pipelines, and ML systems in production. Java, Python, Spark, LLM serving, distributed systems.">
+<title>Parameshwaran Anandhakumar — Software Engineer</title>
+<meta name="description" content="Software Engineer with 5+ years of experience in backend services, distributed data systems, and full-stack delivery. Java/Spring Boot, React/TypeScript, Node.js, and Python ML services.">
 <script>if("IntersectionObserver"in window)document.documentElement.className="js"</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -241,17 +241,45 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
   .js .span,.js .kv .kb{transform:none!important}
   html{scroll-behavior:auto}
 }
+
+/* Content updates retain the original layout and color system. */
+.trace-viewport{overflow-x:auto}
+.tr-axis{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:8px 16px 12px;margin-top:6px}
+.tr-ticks{position:relative;height:16px;grid-column:2}
+.tr-ticks span{position:absolute;white-space:nowrap;transform:translateX(-50%)}
+.tr-ticks span:first-child{transform:none}
+.tr-ticks span:last-child{transform:translateX(-100%)}
+.tr-foot{line-height:1.7}
+.kv-rate-track{height:30px;background:var(--surf2);border:1px solid var(--line)}
+.kv-rate-bar{height:100%;min-width:1px}
+.kv-baseline{background:var(--m1)}
+.kv-agentserve{background:var(--m4)}
+.kv-note{font-size:11px!important;margin:14px 0 0!important;color:var(--tx2)!important}
+.more-projects{font-family:var(--disp);font-size:18px;margin:36px 0 18px;letter-spacing:-.035em}
+.btn{max-width:100%;overflow-wrap:anywhere}
+.foot a{text-decoration:none}
+section[id]{scroll-margin-top:24px}
+@media(max-width:900px){section[id]{scroll-margin-top:160px}}
+@media(max-width:680px){
+  .trace-inner{min-width:560px}
+  .tr-axis{grid-template-columns:52px 1fr;gap:8px;padding-left:16px}
+  .tr-bar{flex-wrap:wrap;gap:8px}
+  .rail>div:first-child{flex-wrap:wrap;gap:5px}
+  .sig span{display:block;margin-left:0}
+  .proj{padding:18px}
+  .job-w{text-align:left}
+  .btn{font-size:11px;padding:10px 14px}
+}
 </style>
 </head>
 <body>
-
 <aside class="rail">
   <div>
     <div class="sig">PARAMESHWARAN<span>ANANDHAKUMAR</span></div>
-    <div class="role">Backend · Data · ML Systems<br>Santa Clara, CA</div>
+    <div class="role">Software Engineer<br>Backend · Data · Full Stack<br>Santa Clara, CA</div>
     <div class="live"><span class="blip"></span>Open to roles</div>
   </div>
-  <nav class="rnav">
+  <nav class="rnav" aria-label="Main navigation">
     <a href="#trace"><span class="idx">01</span>Trace</a>
     <a href="#work"><span class="idx">02</span>Experience</a>
     <a href="#builds"><span class="idx">03</span>Builds</a>
@@ -260,204 +288,143 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <a href="#contact"><span class="idx">06</span>Contact</a>
   </nav>
   <div class="rout">
-    <a href="https://github.com/Parameshwaran-AA">GitHub ↗</a>
-    <a href="https://linkedin.com/in/parameshwaran-anandhakumar">LinkedIn ↗</a>
+    <a href="https://github.com/Parameshwaran-AA/">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/parameshwaran-anandhakumar/">LinkedIn ↗</a>
     <a href="mailto:parameshwarananandhakumar@gmail.com">Email ↗</a>
   </div>
 </aside>
 
 <main class="main">
-
-<!-- HERO + TRACE ─────────────────────────────── -->
 <section class="hero pad" id="trace">
-  <div class="eyebrow">Software Engineer · <em>4+ years</em> · Ford → University at Buffalo</div>
-  <h1>I find where systems<br>do <span class="g">work they do<br>not need to do.</span></h1>
+  <div class="eyebrow">Software Engineer · <em>5+ years</em> · Ford → University at Buffalo</div>
+  <h1>I build backend,<br>data, and <span class="g">full-stack<br>systems.</span></h1>
   <p class="lede">
-    Backend services, data pipelines, and ML systems in production. At Ford I owned the
-    <b>Java and Spring Boot REST API platform</b> behind half a million transactions a month
-    across 11 dealer networks, the <b>Spark and Airflow pipelines</b> feeding it, and a
-    <b>forecasting model</b> serving live predictions on top. Lately I have been deep in
-    <b>LLM serving</b>: why a GPU throws away a 40,000-token cache seconds before it needs
-    it again, and what it costs you.
+    I am a <b>Software Engineer with 5+ years of experience</b> across high-throughput
+    backend services, distributed data systems, and full-stack application delivery.
+    At Ford, I built <b>Java/Spring Boot APIs</b> supporting <b>500K+ monthly transactions
+    across 11 dealer networks</b>. At the University at Buffalo, I delivered a
+    <b>React/TypeScript research-funding platform</b> with Node.js/Express APIs,
+    Python ML services, and MongoDB. My work spans system design, API design,
+    database performance, AWS, Docker/Kubernetes, CI/CD, automated testing,
+    and production operations.
   </p>
   <div class="cta">
     <a class="btn btn-p" href="#builds">View builds</a>
     <a class="btn" href="https://github.com/Parameshwaran-AA/agentserve">AgentServe repo ↗</a>
   </div>
-
-  <div class="trace">
+  <div class="trace" aria-label="Education and employment timeline from August 2018 to December 2026">
     <div class="tr-bar">
-      <span class="dots"><i></i><i></i><i></i></span>
-      <span>trace · career.span — 8y 4mo</span>
-      <span>3 lanes</span>
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>career.span · Aug 2018 — Dec 2026</span><span>2 lanes</span>
     </div>
-    <div class="tr-body">
-      <div class="tr-lane">
-        <div class="tr-lab">study</div>
-        <div class="tr-row">
-          <div class="span sp0" style="left:6.5%;width:41.7%;animation-delay:.05s" title="B.Tech Information Technology, Anna University">B.Tech Information Technology · 3y 10mo</div>
-          <div class="span sp1" style="left:84.3%;width:15.2%;animation-delay:.5s" title="M.S. Data Science · Aug 2025 to Dec 2026">M.S. Data Science</div>
-        </div>
+    <div class="trace-viewport"><div class="trace-inner">
+      <div class="tr-body">
+        <div class="tr-lane"><div class="tr-lab">study</div><div class="tr-row"><div class="span sp0" style="left:0.0000%;width:45.5446%;animation-delay:0.05s" title="B.Tech, Information Technology · Anna University, Chennai, India · Aug 2018 to May 2022" aria-label="B.Tech, Information Technology · Anna University, Chennai, India · Aug 2018 to May 2022" tabindex="0">B.Tech · Anna University</div>
+<div class="span sp1" style="left:83.1683%;width:16.8317%;animation-delay:0.5s" title="Master of Science, Data Science · University at Buffalo, NY · Aug 2025 to Dec 2026" aria-label="Master of Science, Data Science · University at Buffalo, NY · Aug 2025 to Dec 2026" tabindex="0">M.S.</div></div></div>
+        <div class="tr-lane"><div class="tr-lab">work</div><div class="tr-row"><div class="span sp2" style="left:9.9010%;width:15.8416%;animation-delay:0.2s" title="AI/ML Engineer · RMD Engineering College · Jun 2019 to Sep 2020" aria-label="AI/ML Engineer · RMD Engineering College · Jun 2019 to Sep 2020" tabindex="0">AI/ML Engineer</div>
+<div class="span sp3" style="left:28.7129%;width:54.4554%;animation-delay:0.32s" title="Software Engineer · Ford Motor Company · Jan 2021 to Jul 2025" aria-label="Software Engineer · Ford Motor Company · Jan 2021 to Jul 2025" tabindex="0">Ford Motor Company</div>
+<div class="span sp2" style="left:93.0693%;width:4.9505%;animation-delay:0.62s" title="Software Engineer · University at Buffalo, Institute for AI and Data Science · Jun 2026 to Present" aria-label="Software Engineer · University at Buffalo, Institute for AI and Data Science · Jun 2026 to Present" tabindex="0">UB</div></div></div>
       </div>
-      <div class="tr-lane">
-        <div class="tr-lab">work</div>
-        <div class="tr-row">
-          <div class="span sp2" style="left:15.7%;width:13.9%;animation-delay:.2s" title="AI/ML Engineer · Jun 2019 to Sep 2020">AI/ML Eng</div>
-          <div class="span sp3" style="left:50%;width:33.3%;animation-delay:.32s" title="Software Engineer, Ford Motor Company · Jul 2022 to Jul 2025">Ford Motor Company · 3y 0mo</div>
-          <div class="span sp2" style="left:93.5%;width:6%;animation-delay:.62s" title="University at Buffalo · Jun 2026 to present">UB</div>
-        </div>
-      </div>
-      <div class="tr-lane">
-        <div class="tr-lab">build</div>
-        <div class="tr-row">
-          <div class="span sp4" style="left:88%;width:11.5%;animation-delay:.72s" title="AgentServe · 2026">AgentServe</div>
-        </div>
-      </div>
-    </div>
-    <div class="tr-axis"><span>2018</span><span>2020</span><span>2022</span><span>2024</span><span>2026</span></div>
-    <div class="tr-foot">hover a span for detail · durations are real</div>
+      <div class="tr-axis"><div class="tr-ticks">
+        <span style="left:0%">Aug 2018</span><span style="left:16.8317%">2020</span>
+        <span style="left:40.5941%">2022</span><span style="left:64.3564%">2024</span>
+        <span style="left:100%">Dec 2026</span>
+      </div></div>
+    </div></div>
+    <div class="tr-foot">Hover a span for dates · current role shown through Oct 2026</div>
   </div>
-
   <div class="mets">
     <div class="met"><div class="met-v">500K+</div><div class="met-k">txn / month</div><div class="met-s">Ford parts platform</div></div>
     <div class="met"><div class="met-v">−70%</div><div class="met-k">query runtime</div><div class="met-s">2M+ daily records</div></div>
-    <div class="met"><div class="met-v">−38%</div><div class="met-k">stockout risk</div><div class="met-s">forecasting in production</div></div>
+    <div class="met"><div class="met-v">11</div><div class="met-k">dealer networks</div><div class="met-s">Ford REST services</div></div>
     <div class="met"><div class="met-v">&lt;100ms</div><div class="met-k">search latency</div><div class="met-s">UB Atlas, self-hosted</div></div>
-    <div class="met"><div class="met-v">−81%</div><div class="met-k">gpu compute</div><div class="met-s">AgentServe benchmark</div></div>
+    <div class="met"><div class="met-v">71%</div><div class="met-k">KV cache hit rate</div><div class="met-s">AgentServe · replayed traces</div></div>
   </div>
 </section>
-
-<!-- EXPERIENCE ───────────────────────────────── -->
 <section class="sec pad" id="work">
   <div class="shead"><span class="stag">02 / Experience</span><span class="sline"></span></div>
   <h2>Where I have shipped</h2>
-  <p class="ssub">Backend services, distributed data pipelines, machine learning in production, and the data modeling underneath. Owned end to end, from design review through live production incidents.</p>
-
+  <p class="ssub">Backend services, distributed data systems, full-stack applications, and ML services. From system design and API contracts to automated testing, deployment, and production operations.</p>
   <article class="job rv">
     <div class="job-h">
-      <div>
-        <div class="job-org">University at Buffalo</div>
-        <div class="job-t">Software Engineer</div>
-        <div class="job-u">Institute for AI and Data Science</div>
-      </div>
+      <div><div class="job-org">University at Buffalo</div><div class="job-t">Software Engineer</div><div class="job-u">Institute for AI and Data Science</div></div>
       <div class="job-w">Jun 2026 — Present<br><span class="chip now">Current</span></div>
     </div>
     <div class="job-b">
       <ul>
-        <li>Cut an external <b>LLM API</b> out of the critical path of UB Atlas, a research-to-funding matching platform, replacing it with self-hosted <b>Sentence Transformer embeddings</b> (all-MiniLM-L6-v2) and cosine similarity ranking across the faculty profile corpus. Per-query API cost went to zero and search latency <span class="num">under 100ms</span>.</li>
-        <li><b>Evaluated candidate embedding models and measured retrieval quality</b> before promoting one to production, then served it as a Python ML matching service behind the public API.</li>
-        <li>Shipped the platform end to end: a <b>Node.js and Express REST API</b> documented in Swagger/OpenAPI, a Python ML matching service, MongoDB persistence, and a <b>React 18 and TypeScript</b> front end with instant command-palette search.</li>
-        <li>Containerized the stack behind <b>Docker Compose</b> and an <b>Nginx</b> reverse proxy with health checks and environment-scoped configs, reducing a multi-terminal setup to one reproducible command.</li>
-        <li>Engineered a record reconciliation pipeline normalizing identifiers across scraped affiliate data and the faculty profile store, <b>eliminating duplicate records</b>, covered by an automated API, ML, and database test suite.</li>
+        <li>Re-architected search for UB Atlas, a research-to-funding matching platform for the UB Office of Research Advancement, replacing a paid external LLM dependency with self-hosted Sentence Transformer embeddings and cosine-similarity ranking; brought query latency <span class="num">under 100 ms</span> and <span class="num">per-query API cost to zero</span>.</li>
+        <li>Built and shipped the platform end to end: a Node.js/Express REST API with Swagger/OpenAPI contracts, a Python ML matching service, MongoDB persistence, and a React/TypeScript front end with command-palette search and predictive autocomplete across mobile and desktop.</li>
+        <li>Containerized the multi-service application with Docker Compose and Nginx, adding health checks and environment-scoped configuration for reproducible, one-command deployment.</li>
+        <li>Designed a record-reconciliation pipeline that normalized identifiers across scraped affiliate data and faculty profiles, eliminating duplicate records, and backed it with automated API, ML, and database tests.</li>
       </ul>
-      <div class="tags"><span>Node.js</span><span>Express</span><span>Python</span><span>MongoDB</span><span>React 18</span><span>TypeScript</span><span>Docker</span><span>Nginx</span></div>
+      <div class="tags"><span>Node.js</span><span>Express</span><span>Python</span><span>Sentence Transformers</span><span>MongoDB</span><span>React</span><span>TypeScript</span><span>Swagger/OpenAPI</span><span>Docker Compose</span><span>Nginx</span></div>
     </div>
   </article>
-
   <article class="job rv">
     <div class="job-h">
-      <div>
-        <div class="job-org">Ford Motor Company</div>
-        <div class="job-t">Software Engineer</div>
-        <div class="job-u">Service Parts After Sales</div>
-      </div>
-      <div class="job-w">Jul 2022 — Jul 2025<br><span class="chip">3 years</span></div>
+      <div><div class="job-org">Ford Motor Company</div><div class="job-t">Software Engineer</div><div class="job-u">Service Parts After Sales</div></div>
+      <div class="job-w">Jan 2021 — Jul 2025</div>
     </div>
     <div class="job-b">
       <ul>
-        <li>Designed and shipped the <b>REST API platform layer</b> for order management, pricing, and delivery in <b>Java, Spring Boot, MySQL, and React.js</b>, sustaining <span class="num">500K+ transactions a month</span> across 11 dealer networks and cutting order processing <span class="num">55%</span>.</li>
-        <li>Built the distributed pipelines moving dealer inventory and parts demand data on <b>Apache Spark, Apache Airflow, and dbt Core</b>, modeled in <b>Snowflake</b>, replacing fragmented per-network reporting with one consistent data model used by <span class="num">10 internal teams</span> and external partner systems including joint-venture dealers and government portals.</li>
-        <li>Productionized a <b>demand forecasting</b> and vendor priority scoring model as a real-time inference service in <b>Python, FastAPI, and PostgreSQL</b>, serving time-series predictions that reduced stockout risk <span class="num">38%</span>.</li>
-        <li>Optimized <b>MySQL</b> warehouse performance across 2M+ daily records by rewriting queries against EXPLAIN plans, reworking schemas and indexing strategy, and adding table partitioning, cutting average query runtime <span class="num">70%</span> while holding throughput stable at peak load.</li>
-        <li>Replaced a largely manual release process with automated <b>CI/CD</b> across <b>Jenkins, GitLab CI, and AWS CodePipeline</b>, adding Docker-based build and test orchestration that shortened release cycles <span class="num">30%</span>.</li>
-        <li>Converted live incident triage and root cause analysis into permanent fixes, working with globally distributed engineering and dealer operations teams.</li>
+        <li>Designed and shipped Java/Spring Boot REST services for order management, pricing, and delivery in the Service Parts After Sales platform, supporting <span class="num">500K+ monthly transactions</span> across <span class="num">11 dealer networks</span>.</li>
+        <li>Built distributed inventory and demand pipelines with Apache Spark, Airflow, dbt, and Snowflake, replacing fragmented per-network reporting with a consistent data model used by <span class="num">10 internal teams</span> and external partner systems.</li>
+        <li>Optimized MySQL workloads processing <span class="num">2M+ records per day</span> by rewriting queries from EXPLAIN plans, redesigning indexes and schemas, and partitioning tables; reduced average query runtime by <span class="num">70%</span> while maintaining peak throughput.</li>
+        <li>Productionized a real-time demand-forecasting and vendor-priority service with Python, FastAPI, and PostgreSQL to support inventory prioritization and mitigate stockout risk.</li>
+        <li>Automated build, test, and deployment workflows with Jenkins, GitLab CI, AWS CodePipeline, and Docker; owned services through design review, testing, deployment, incident triage, and root-cause fixes with globally distributed teams.</li>
       </ul>
-      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Python</span><span>FastAPI</span><span>MySQL</span><span>PostgreSQL</span><span>Docker</span><span>React.js</span></div>
+      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Spark</span><span>Airflow</span><span>dbt</span><span>Snowflake</span><span>MySQL</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Jenkins</span><span>GitLab CI</span><span>AWS CodePipeline</span><span>Docker</span></div>
     </div>
   </article>
-
   <article class="job rv">
     <div class="job-h">
-      <div>
-        <div class="job-org">RMD Engineering College</div>
-        <div class="job-t">AI/ML Engineer</div>
-        <div class="job-u">Research Lab · applied industry projects</div>
-      </div>
-      <div class="job-w">Jun 2019 — Sep 2020<br><span class="chip">1y 4mo</span></div>
+      <div><div class="job-org">RMD Engineering College</div><div class="job-t">AI/ML Engineer</div></div>
+      <div class="job-w">Jun 2019 — Sep 2020</div>
     </div>
     <div class="job-b">
       <ul>
-        <li>Built a <b>payment reconciliation platform</b> in <b>Java</b> and <b>Spring Boot</b> that automatically matched <b>UPI/IMPS transactions</b> against settlement and internal ledger records and flagged reconciliation exceptions, with <b>PostgreSQL</b> persistence and <b>Kafka</b> event streaming.</li>
-        <li>Integrated a Python-based <b>ML transaction-matching service</b> using <b>XGBoost/Random Forest</b>, scikit-learn, and Pandas to match payment records and classify settlement exceptions; evaluated <b>precision, recall, F1-score</b>, and end-to-end reconciliation processing time.</li>
-        <li>Engineered the matching features from transaction, settlement, and ledger records, covering same-transaction identification and settlement exception classification.</li>
+        <li>Built a Java/Spring Boot payment-reconciliation platform to match UPI/IMPS transactions against settlement and ledger records, flag exceptions, and persist results in PostgreSQL with Kafka event streaming.</li>
+        <li>Integrated a Python ML transaction-matching service using XGBoost, Random Forest, scikit-learn, and Pandas to match payment records and classify settlement exceptions; evaluated precision, recall, F1-score, and processing time.</li>
       </ul>
-      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Python</span><span>XGBoost</span><span>scikit-learn</span><span>PostgreSQL</span><span>Kafka</span></div>
+      <div class="tags"><span>Java</span><span>Spring Boot</span><span>Python</span><span>XGBoost</span><span>Random Forest</span><span>scikit-learn</span><span>Pandas</span><span>PostgreSQL</span><span>Kafka</span></div>
     </div>
   </article>
 </section>
-
-<!-- BUILDS ───────────────────────────────────── -->
 <section class="sec pad" id="builds">
   <div class="shead"><span class="stag">03 / Builds</span><span class="sline"></span></div>
-  <h2>Things I built to answer a question</h2>
-  <p class="ssub">Serving infrastructure, agent systems, data platforms, and backend services. Each started because a system did not behave the way I expected.</p>
-
+  <h2>Selected projects</h2>
+  <p class="ssub">LLM serving infrastructure, agent systems, data platforms, and backend applications.</p>
   <article class="hero-proj rv">
-    <div class="hp-top">
-      <span class="hp-dom">AI Infrastructure · LLM Serving</span>
-      <span class="hp-tag">Latest</span>
-    </div>
-    <h3 class="hp-t">AgentServe — scheduling sessions, not requests</h3>
+    <div class="hp-top"><span class="hp-dom">AI Infrastructure · LLM Serving</span><span class="hp-tag">Featured</span></div>
+    <h3 class="hp-t">AgentServe — Agent-Aware LLM Serving Gateway for Kubernetes GPU Clusters</h3>
     <div class="hp-grid">
       <div>
-        <p>Serving engines schedule one request at a time. An agent sends thirty for a single
-        task, each containing the last one word for word, with tool calls in between that take
-        anywhere from 300ms to two minutes. During a 45-second test run the session looks idle,
-        so the GPU evicts its 40,000-token KV cache and recomputes it when the agent returns.</p>
-        <p>AgentServe makes the session the scheduling unit. Session-affinity routing sends
-        follow-up calls back to the replica already holding the prefix, yielding to load rather
-        than pinning. An online EWMA predictor learns per-tool return times, driving a three-tier
-        cache policy that pins short pauses in GPU memory, offloads long ones to host DRAM, and
-        drops dead sessions. Routing state lives in Redis so more than one gateway pod stays
-        correct, and the Helm chart refuses to deploy multi-pod without it.</p>
-        <p class="caveat">Benchmarked against stock vLLM on replayed coding-agent traces using a
-        deterministic cost model. A harness to reproduce on real GPUs ships in the repo.</p>
+        <p>Built a Python/FastAPI gateway for Kubernetes GPU clusters, scheduling multi-turn agent sessions across vLLM replicas with session-affinity routing and online EWMA tool-duration prediction.</p>
+        <p>Designed a three-tier KV-cache policy that offloads paused sessions to host DRAM instead of evicting them, raising cache hit rate from <span class="num">33% to 71%</span> on replayed coding-agent traces.</p>
+        <p>Shipped Redis-backed distributed routing state, SSE streaming, Docker/Helm deployment, Prometheus observability, and automated tests in a multi-job GitHub Actions pipeline.</p>
       </div>
-      <div class="kv" id="kv">
-        <div class="kv-c">one agent turn · 45s tool call</div>
+      <div class="kv" id="kv" role="img" aria-label="KV cache hit rate increased from 33 percent to 71 percent on replayed coding-agent traces">
+        <div class="kv-c">KV cache hit rate</div>
         <div class="kv-l">
-          <div class="kv-n"><span>stock vLLM</span><em style="color:#E2557B">2.0s prefill</em></div>
-          <div class="kv-t">
-            <div class="kb k-call" style="animation-delay:.05s">call</div>
-            <div class="kb k-gap" style="animation-delay:.2s">tool call · evicted</div>
-            <div class="kb k-cold" style="animation-delay:.5s">full recompute</div>
-          </div>
+          <div class="kv-n"><span>Baseline</span><em>33%</em></div>
+          <div class="kv-rate-track"><div class="kv-rate-bar kv-baseline" style="width:33%"></div></div>
         </div>
         <div class="kv-l">
-          <div class="kv-n"><span>AgentServe</span><em style="color:#FF9A62">0.03s prefill</em></div>
-          <div class="kv-t">
-            <div class="kb k-call" style="animation-delay:.15s">call</div>
-            <div class="kb k-gap" style="animation-delay:.3s">tool call</div>
-            <div class="kb k-hold" style="animation-delay:.6s">DRAM hold</div>
-            <div class="kb k-warm" style="animation-delay:.72s">warm</div>
-          </div>
+          <div class="kv-n"><span>AgentServe</span><em style="color:#FF9A62">71%</em></div>
+          <div class="kv-rate-track"><div class="kv-rate-bar kv-agentserve" style="width:71%"></div></div>
         </div>
-        <div class="kv-k">
-          <span><i class="sw" style="background:#5B2C8D"></i>model call</span>
-          <span><i class="sw" style="background:#7A1F3D"></i>recomputed</span>
-          <span><i class="sw" style="background:#FF9A62"></i>reused</span>
-        </div>
+        <p class="kv-note">Measured on replayed coding-agent traces.</p>
       </div>
     </div>
     <div class="hp-mets">
-      <div class="hpm"><div class="hpm-v">33% → 71%</div><div class="hpm-k">kv cache hit rate</div></div>
-      <div class="hpm"><div class="hpm-v">−81%</div><div class="hpm-k">gpu compute time</div></div>
-      <div class="hpm"><div class="hpm-v">−25%</div><div class="hpm-k">p95 job completion</div></div>
+      <div class="hpm"><div class="hpm-v">33% → 71%</div><div class="hpm-k">KV cache hit rate</div></div>
+      <div class="hpm"><div class="hpm-v">3 tiers</div><div class="hpm-k">KV-cache policy</div></div>
+      <div class="hpm"><div class="hpm-v">SSE</div><div class="hpm-k">streaming responses</div></div>
     </div>
-    <div class="tags"><span>Python</span><span>FastAPI</span><span>vLLM</span><span>Kubernetes</span><span>Redis</span><span>Helm</span><span>Docker</span><span>Prometheus</span><span>Grafana</span><span>automated CI</span></div>
+    <div class="tags"><span>Python</span><span>FastAPI</span><span>vLLM</span><span>Kubernetes</span><span>Redis</span><span>Docker</span><span>Helm</span><span>Prometheus</span><span>GitHub Actions</span></div>
     <a class="go" href="https://github.com/Parameshwaran-AA/agentserve" style="margin-top:14px">Read the code →</a>
   </article>
-
+  <h3 class="more-projects">More projects</h3>
   <article class="proj rv">
     <div class="hp-top">
       <span class="hp-dom">Multi-Agent Systems · Code Generation</span>
@@ -613,7 +580,7 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
     <div class="hp-top">
       <span class="hp-dom">Full Stack · Search</span>
     </div>
-    <h3 class="hp-t">Fable — one request, four data stores</h3>
+    <h3 class="hp-t">Fable — one request, three data stores</h3>
     <div class="hp-grid">
       <div>
         <p>A social storytelling platform where the interesting problem is routing. Full-text
@@ -646,61 +613,51 @@ h1 .g{background:linear-gradient(96deg,var(--m3),var(--m4) 62%,var(--m5));-webki
   </article>
 
 </section>
-
-<!-- EDUCATION ────────────────────────────────── -->
 <section class="sec pad" id="learn">
   <div class="shead"><span class="stag">04 / Education</span><span class="sline"></span></div>
   <h2>Academic background</h2>
   <div class="eg">
     <div class="ec rv">
-      <h3>M.S. Data Science</h3>
-      <div class="w">University at Buffalo, SUNY</div>
+      <h3>Master of Science, Data Science</h3>
+      <div class="w">University at Buffalo, NY</div>
       <div class="d">Aug 2025 — Dec 2026</div>
-      <p>Machine Learning, Statistics and Probability, Data Models and Query Languages, Python for Data Scientists.</p>
     </div>
     <div class="ec rv">
-      <h3>B.Tech Information Technology</h3>
-      <div class="w">Anna University, Chennai</div>
-      <div class="d">Aug 2018 — Jun 2022</div>
-      <p>CS fundamentals, data structures and algorithms, object-oriented programming, software engineering.</p>
+      <h3>B.Tech, Information Technology</h3>
+      <div class="w">Anna University, Chennai, India</div>
+      <div class="d">Aug 2018 — May 2022</div>
     </div>
   </div>
 </section>
-
-<!-- STACK ────────────────────────────────────── -->
 <section class="sec pad" id="stack">
   <div class="shead"><span class="stag">05 / Stack</span><span class="sline"></span></div>
-  <h2>What I work with</h2>
-  <p class="ssub">Grouped by what I reach for, not by what looks long in a list.</p>
+  <h2>Technical skills</h2>
+  <p class="ssub">Tools and engineering practices across application delivery, data systems, and ML serving.</p>
   <div class="rv">
-    <div class="srow"><div class="sk">Languages</div><div class="sv"><span>Python</span><span>Java</span><span>SQL</span><span>TypeScript</span><span>JavaScript</span><span>C++</span><span>Bash</span><span>Scala</span></div></div>
-    <div class="srow"><div class="sk">Backend / APIs</div><div class="sv"><span>FastAPI</span><span>Spring Boot</span><span>Django</span><span>Node.js</span><span>Express</span><span>REST</span><span>GraphQL</span><span>Microservices</span><span>OpenAPI</span><span>React.js</span></div></div>
-    <div class="srow"><div class="sk">Data / Pipelines</div><div class="sv"><span>Apache Spark</span><span>Airflow</span><span>dbt Core</span><span>Kafka</span><span>PySpark</span><span>ETL/ELT</span></div></div>
-    <div class="srow"><div class="sk">ML / AI Systems</div><div class="sv"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>vLLM</span><span>Sentence Transformers</span><span>XGBoost</span><span>Random Forest</span><span>Feature engineering</span><span>Model evaluation</span><span>Time-series forecasting</span><span>Model serving</span><span>Inference optimization</span><span>RAG</span><span>FAISS</span><span>LangChain</span></div></div>
-    <div class="srow"><div class="sk">Infrastructure</div><div class="sv"><span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Nginx</span><span>Prometheus</span><span>Grafana</span><span>Jenkins</span><span>GitLab CI</span><span>GitHub Actions</span></div></div>
-    <div class="srow"><div class="sk">Cloud / Storage</div><div class="sv"><span>AWS S3</span><span>EC2</span><span>Lambda</span><span>SageMaker</span><span>EKS</span><span>Glue</span><span>Snowflake</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span></div></div>
-    <div class="srow"><div class="sk">Practices</div><div class="sv"><span>System design</span><span>Code review</span><span>pytest</span><span>JUnit</span><span>Jest</span><span>Incident triage</span><span>Root cause analysis</span><span>Agile</span></div></div>
+    <div class="srow"><div class="sk">Languages</div><div class="sv"><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript (ES6+)</span><span>TypeScript</span><span>C++</span><span>HTML5</span><span>CSS3</span><span>Bash</span></div></div>
+    <div class="srow"><div class="sk">Backend &amp; Web</div><div class="sv"><span>Spring Boot</span><span>Hibernate/JPA</span><span>FastAPI</span><span>Django</span><span>Node.js/Express</span><span>React.js</span><span>REST APIs</span><span>Swagger/OpenAPI</span><span>microservices</span></div></div>
+    <div class="srow"><div class="sk">Data &amp; Databases</div><div class="sv"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>NoSQL</span><span>Snowflake</span><span>Spark (PySpark, Spark SQL)</span><span>Airflow</span><span>dbt</span><span>Kafka</span></div></div>
+    <div class="srow"><div class="sk">Cloud &amp; DevOps</div><div class="sv"><span>AWS (EC2, S3, Lambda, CodePipeline)</span><span>Docker</span><span>Kubernetes</span><span>Git</span><span>Linux</span><span>CI/CD (Jenkins, GitLab CI, GitHub Actions)</span></div></div>
+    <div class="srow"><div class="sk">Engineering</div><div class="sv"><span>Data structures &amp; algorithms</span><span>object-oriented design</span><span>design patterns</span><span>system design</span><span>distributed systems</span><span>scalability</span><span>reliability</span><span>concurrency</span><span>caching</span><span>fault tolerance</span><span>event-driven architecture</span><span>observability</span><span>SDLC</span><span>code review</span><span>Agile/Scrum</span></div></div>
+    <div class="srow"><div class="sk">Testing</div><div class="sv"><span>JUnit</span><span>Mockito</span><span>pytest</span><span>Jest</span><span>unit testing</span><span>integration testing</span><span>API testing</span></div></div>
+    <div class="srow"><div class="sk">ML &amp; AI</div><div class="sv"><span>scikit-learn</span><span>XGBoost</span><span>Pandas</span><span>NumPy</span><span>Sentence Transformers</span><span>vLLM</span><span>RAG</span><span>model serving</span></div></div>
   </div>
 </section>
-
-<!-- CONTACT ──────────────────────────────────── -->
 <section class="contact pad" id="contact">
   <div class="shead"><span class="stag">06 / Contact</span><span class="sline"></span></div>
-  <div class="ct">Got a hard <span class="g">systems problem?</span></div>
-  <p class="ssub" style="margin-bottom:0">Open to backend, platform, ML engineering, AI infrastructure, and data science roles. The fastest way to reach me is email.</p>
+  <div class="ct">Have a <span class="g">system to build?</span></div>
+  <p class="ssub" style="margin-bottom:0">Open to software engineering roles across backend services, full-stack platforms, data systems, and ML infrastructure. The fastest way to reach me is email.</p>
   <div class="cl">
     <a class="btn btn-p" href="mailto:parameshwarananandhakumar@gmail.com">parameshwarananandhakumar@gmail.com</a>
-    <a class="btn" href="https://linkedin.com/in/parameshwaran-anandhakumar">LinkedIn ↗</a>
-    <a class="btn" href="https://github.com/Parameshwaran-AA">GitHub ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/parameshwaran-anandhakumar/">LinkedIn ↗</a>
+    <a class="btn" href="https://github.com/Parameshwaran-AA/">GitHub ↗</a>
   </div>
   <div class="foot">
-    <span>Santa Clara, CA · 716-303-9675</span>
-    <span>Built by hand · no template · 2026</span>
+    <span>Santa Clara, CA · <a href="tel:+17163039675">716-303-9675</a></span>
+    <span>Parameshwaran Anandhakumar · 2026</span>
   </div>
 </section>
-
 </main>
-
 <script>
 if (document.documentElement.classList.contains('js')) {
   const io = new IntersectionObserver((es) => {
